@@ -1,6 +1,6 @@
 import rawData from "./data.json";
 
-export const pageNames = rawData.pageNames as readonly [
+export const pageNames = rawData.pageNames as unknown as readonly [
   "home",
   "about",
   "services",
