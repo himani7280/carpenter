@@ -6,7 +6,7 @@ export function ServicesPage() {
   return (
     <>
         <PageBanner page="services" />
-        <ServicesSection content={homeContent.services} rows={2} />
+        <ServicesSection content={homeContent.services} />
     </>
   );
 }

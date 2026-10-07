@@ -73,7 +73,7 @@ export function AutoCarousel({
         {children.map((child, index) => <SwiperSlide key={index}>{child}</SwiperSlide>)}
       </Swiper>
       {controls && (
-        <div className="mt-2.5 flex min-h-[34px] items-center justify-center gap-3" aria-label={`${controlsLabel} controls`}>
+        <div className="mt-8 flex min-h-[34px] items-center justify-center gap-3" aria-label={`${controlsLabel} controls`}>
           <button aria-label={`Previous ${controlsLabel}`} className={`${arrow} left-0 [&_svg]:rotate-180`} onClick={() => swiperRef.current?.slidePrev()} type="button"><Icon name="arrow" /></button>
           <div className="flex items-center gap-2">
             {children.map((_, index) => (

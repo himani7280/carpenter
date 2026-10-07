@@ -5,7 +5,7 @@ import { PageBanner } from "@/components/common/page-elements";
 import { Icon } from "@/components/common/icon";
 import { sectionSpace } from "@/components/common/styles";
 
-const articleText = "text-[14px] leading-[1.8] text-[#69635d] max-[560px]:text-[13px]";
+const articleText = "text-[14px] leading-[1.8] text-[#4c4844] max-[560px]:text-[13px]";
 const articleTitle = "mt-8 text-[clamp(23px,2.7vw,32px)] leading-[1.2] font-[750] tracking-[-0.5px] text-ink after:mt-3 after:mb-3 after:block after:h-0.5 after:w-16 after:bg-accent max-[560px]:text-[25px]";
 const panel = "rounded-[7px] border border-[#e9e5df] p-[19px]";
 const panelTitle = "mb-[15px] text-[22px] font-bold after:mt-2 after:block after:h-0.5 after:w-14 after:bg-accent";
@@ -81,15 +81,20 @@ export function BlogDetailsPage({ post }: { post: BlogPost }) {
                 {blogPosts.slice(0, 4).map((p) => (
                   <Link className="grid grid-cols-[82px_minmax(0,1fr)] gap-3 border-b border-[#eee9e4] py-3 last:border-0 last:pb-0" href={`/blog/${p.slug}`} key={p.slug}>
                     <Image alt="" className="h-[72px] w-[82px] rounded-[4px] object-cover" height={80} src={p.image} width={90} />
-                    <span><strong className="block text-[13px] leading-[1.4]">{p.title}</strong><small className="mt-[7px] block text-[12px] text-[#7b736d]">{p.date}</small></span>
+                    <span><strong className="block text-[13px] leading-[1.4]">{p.title}</strong><small className="mt-[7px] block text-[12px] text-[#56514c]">{p.date}</small></span>
                   </Link>
                 ))}
               </div>
               <div className={panel} data-motion-effect="fade-left">
                 <h2 className={panelTitle}>{article.categoriesTitle}</h2>
-                {article.categories.map(([category, count]) => (
-                  <Link className="flex justify-between gap-2.5 border-b border-[#eee9e4] py-[11px] text-[13px] last:border-0" href="/blog" key={category}>{category}<span className="ml-auto text-[#9d6937]">{count}</span><span className="text-[#9d6937]">›</span></Link>
-                ))}
+                {article.categories.map(([category, count]) => {
+                  const matchingPost = blogPosts.find(p => p.category === category);
+                  const href = matchingPost ? `/blog/${matchingPost.slug}` : "/blog";
+                  const label = matchingPost ? matchingPost.title : category;
+                  return (
+                    <Link className="flex justify-between gap-2.5 border-b border-[#eee9e4] py-[11px] text-[13px] last:border-0" href={href} key={category}>{label}<span className="ml-auto text-[#9d6937]">{count}</span><span className="text-[#9d6937]">›</span></Link>
+                  );
+                })}
               </div>
               <div className="relative overflow-hidden rounded-[7px] bg-[#2b1e16] bg-[url('/images/carpenter-hero.webp')] bg-position-[center_40%] bg-cover p-6 text-white before:absolute before:inset-0 before:bg-[rgb(31_21_15/78%)] max-[800px]:col-span-full" data-motion-effect="fade-left">
                 <div className="relative">

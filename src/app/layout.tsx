@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html className={`${montserrat.variable} ${poppins.variable} ${roboto.variable} min-h-full scroll-smooth`} lang="en">
+    <html className={`${montserrat.variable} ${poppins.variable} ${roboto.variable} min-h-full`} lang="en">
       <body className="min-h-screen bg-white text-ink antialiased">
         <SiteMotion />
         {/* overflow-x-clip lives on this wrapper (not <body>, whose overflow is applied to the viewport) so slide-in animations can't widen the page on phones; clip keeps the sticky header working. */}

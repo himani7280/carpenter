@@ -38,7 +38,7 @@ export function ServiceDetailsPage({ service }: { service: ServiceType }) {
                     <div className="group grid justify-items-center border-r border-[#e8d9c9] px-[12px] py-[7px] text-center last:border-0 max-[560px]:px-[7px] max-[560px]:py-2.5 max-[560px]:[&:nth-child(2)]:border-r-0 max-[560px]:[&:nth-child(n+3)]:border-t" data-motion-effect="zoom-in" key={title}>
                       <Icon className="mb-[9px] size-12 rounded-full bg-[#f6dfc8] p-2.5 text-[#b8793e] transition duration-[220ms] group-hover:rotate-[44deg] group-hover:text-[#8c4a1c]" name={icon as IconName} />
                       <strong className="text-[13px] max-[560px]:text-[11px]">{title}</strong>
-                      <span className="mt-[5px] text-[11px] leading-[1.5] text-[#736a62] max-[560px]:text-[10px]">{text}</span>
+                      <span className="mt-[5px] text-[11px] leading-[1.5] text-[#48423d] max-[560px]:text-[10px]">{text}</span>
                     </div>
                   ))}
                 </div>
@@ -58,9 +58,9 @@ export function ServiceDetailsPage({ service }: { service: ServiceType }) {
                 </div>
                 <div className="border-t border-[#efeae5] p-2">
                   <p className="px-3 py-2 text-[11px] font-semibold tracking-[1px] uppercase text-[#9b6b3f]">More Services</p>
-                  {serviceTypes.slice(0, 5).map((service) => (
-                    <Link className="flex min-h-[40px] items-center justify-between gap-2.5 rounded-[6px] border-b border-[#efeae5] px-3 py-[7px] text-[13px] last:border-b-0 hover:bg-[#fbeee0] hover:text-[#8a5429]" href="/services" key={service}>
-                      {service}<span className="text-[18px] text-[#6b5b4f]">›</span>
+                  {carpenterServices.filter(s => s.slug !== service.slug).slice(0, 5).map((s) => (
+                    <Link className="flex min-h-[40px] items-center justify-between gap-2.5 rounded-[6px] border-b border-[#efeae5] px-3 py-[7px] text-[13px] last:border-b-0 hover:bg-[#fbeee0] hover:text-[#8a5429]" href={s.href} key={s.slug}>
+                      {s.title}<span className="text-[18px] text-[#6b5b4f]">›</span>
                     </Link>
                   ))}
                 </div>

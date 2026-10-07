@@ -23,7 +23,7 @@ export function WhyChoose() {
               </div>
             ))}
           </div>
-          <Link className={`${button} ${buttonGold} mt-6 min-h-11.5 uppercase`} href="/services">Read More <Icon name="arrow" /></Link>
+          <Link className={`${button} ${buttonGold} mt-6 min-h-11.5 uppercase`} href="/contact">Contact Us <Icon name="arrow" /></Link>
         </div>
         <div className="relative max-[800px]:order-first max-[800px]:px-3" data-motion-effect="zoom-out">
           <span aria-hidden="true" className="absolute -top-2 -left-3.5 h-[62%] w-9 rounded-[10px] bg-accent [clip-path:polygon(0_8%,100%_0,100%_100%,0_92%)]" />

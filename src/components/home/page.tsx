@@ -12,7 +12,7 @@ export function HomePage() {
   return (
     <>
         <HomeHero discoverLabel={siteCopy.callsToAction.discoverLabel} slides={hero.slides} />
-        <ServicesSection />
+        <ServicesSection limit={3} />
         <AboutOverview />
         <Achievements />
         <Testimonials />

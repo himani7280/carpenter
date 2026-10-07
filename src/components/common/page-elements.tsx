@@ -33,7 +33,7 @@ export function PageBanner({
   return (
     <section className="relative grid min-h-[330px] place-items-center overflow-hidden bg-[#30251e] bg-[url('/images/carpenter-hero.webp')] bg-position-[center_44%] bg-cover bg-no-repeat text-center text-white before:absolute before:inset-0 before:bg-[rgb(22_17_14/76%)] max-[560px]:min-h-[215px]">
       <div className="site-container relative z-1 py-[50px] max-[560px]:py-[35px]">
-        <h1 className="font-banner mb-[21px] text-[clamp(38px,5vw,61px)] font-bold tracking-[-1.5px] max-[560px]:mb-[13px] max-[560px]:text-[38px]" data-motion-effect="fade-down">{pageTitle}</h1>
+        <h1 className="font-banner mb-[21px] text-[clamp(32px,4vw,48px)] font-bold tracking-[-1.5px] max-[560px]:mb-[13px] max-[560px]:text-[32px]" data-motion-effect="fade-down">{pageTitle}</h1>
         <nav aria-label="Breadcrumb" className="font-banner flex justify-center gap-[11px] text-[14px] text-white max-[560px]:text-[12px]" data-motion-flip="up">
           {trail.map((crumb) => (
             <Fragment key={crumb.href}>

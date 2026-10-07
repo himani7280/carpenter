@@ -16,7 +16,6 @@ export function BlogPreview({ content = homeContent.blog }: { content?: typeof h
         <AutoCarousel className="block overflow-hidden [&_.swiper-slide]:h-auto! [&_article]:h-full" controls controlsLabel="article" slidesPerView={3}>
           {posts.map((post, index) => <BlogCard index={index} key={post.title} post={post} />)}
         </AutoCarousel>
-        <div className="mt-[30px] flex justify-center max-[560px]:mt-[22px]"><Link className={`${button} ${buttonOutline}`} href="/blog">Explore All Articles <Icon name="arrow" /></Link></div>
       </div>
     </section>
   );

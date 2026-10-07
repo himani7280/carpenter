@@ -14,7 +14,7 @@ export function BlogCard({ post, index }: { post: (typeof blogPosts)[number]; in
       <div className="px-5 pt-[17px] pb-5">
         <span className="inline-block bg-[#f5eee6] px-2 py-1 text-[9px] font-extrabold tracking-[1.1px] text-[#885624] uppercase">{post.category}</span>
         <h3 className="mt-[9px] mb-2 text-[18px] leading-[1.35] max-[560px]:text-[17px]" data-motion-flip={index % 2 ? "right" : "left"}><Link href={href}>{post.title}</Link></h3>
-        <p className="mb-3 line-clamp-2 text-[13px] leading-[1.6] text-[#77716c]">{post.excerpt}</p>
+        <p className="mb-3 line-clamp-2 text-[13px] leading-[1.6] text-[#544f4b]">{post.excerpt}</p>
         <Link className="inline-flex items-center gap-[9px] text-[11px] font-extrabold tracking-[1px] text-[#865326] uppercase [&_svg]:size-4" href={href}>Read More <Icon name="arrow" /><i className="h-px w-12 bg-[#c9a27c]" /></Link>
       </div>
       <span className="absolute right-3.5 bottom-[17px] text-[12px] text-[#c8b6a4]">0{index + 1}</span>

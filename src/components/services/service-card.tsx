@@ -26,7 +26,7 @@ export function ServiceCard({ service }: { service: (typeof carpenterServices)[n
           <h3 className="flex-1 text-[20px] leading-[1.15] font-bold group-hover:text-bronze max-[560px]:text-[18px]" data-motion-flip={Number(service.number) % 2 ? "left" : "right"}><Link href={service.href}>{service.title}</Link></h3>
           <Link aria-label={`Read about ${service.title}`} className={`${roundArrow} size-[39px] group-hover:bg-brown-dark group-hover:[&_svg]:-rotate-45 max-[560px]:size-[34px] [&_svg]:size-[19px]`} href={service.href}><Icon name="arrow" /></Link>
         </div>
-        <p className="mt-1 pr-6 pl-[51px] text-[13px] leading-[1.6] text-[#77716c]">{service.description}</p>
+        <p className="mt-1 pr-6 pl-[51px] text-[13px] leading-[1.6] text-[#544f4b]">{service.description}</p>
       </div>
     </article>
   );

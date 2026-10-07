@@ -54,10 +54,10 @@ export function SiteHeader() {
       <div className="h-[38px] bg-brown-dark text-[12px] text-white max-[800px]:hidden">
         <div className="site-container flex h-full items-center justify-between">
           <span className={topbarLink}><Icon name="pin" /> {siteCopy.brand.tagline}</span>
-          <div className="flex h-full items-center gap-[45px]">
+          <div className="flex h-full items-center">
             <a className={topbarLink} href={`tel:${siteMetadata.phoneLink}`}><Icon name="phone" />{siteMetadata.phone}</a>
-            <a className={topbarLink} href={`mailto:${siteMetadata.email}`}><Icon name="mail" />{siteMetadata.email}</a>
-            <span aria-label="Social media" className="ml-8 flex items-center gap-5 border-l border-[rgb(245_228_210/25%)] px-[45px] text-white">
+            <a className={`${topbarLink} ml-[35px]`} href={`mailto:${siteMetadata.email}`}><Icon name="mail" />{siteMetadata.email}</a>
+            <span aria-label="Social media" className="ml-[40px] flex items-center gap-5 border-l border-[rgb(245_228_210/25%)] pl-[30px] text-white">
               <a aria-label="Facebook" className="transition-colors hover:text-gold-light" href="https://www.facebook.com/" rel="noreferrer" target="_blank"><SocialIcon className="size-4" name="facebook" /></a>
               <a aria-label="Instagram" className="transition-colors hover:text-gold-light" href="https://www.instagram.com/" rel="noreferrer" target="_blank"><SocialIcon className="size-4" name="instagram" /></a>
               <a aria-label="YouTube" className="transition-colors hover:text-gold-light" href="https://www.youtube.com/" rel="noreferrer" target="_blank"><SocialIcon className="size-4" name="youtube" /></a>
@@ -66,9 +66,8 @@ export function SiteHeader() {
         </div>
       </div>
       <div className="relative z-10 bg-white shadow-[0_2px_12px_rgb(36_27_20/5%)]">
-        <div className="site-container flex h-[102px] items-center justify-start gap-[30px] max-[1100px]:gap-[18px] max-[800px]:h-[82px] max-[800px]:gap-3 max-[560px]:h-[72px]">
-          {/* Header logo size updated to match the footer logo size */}
-          <Brand imageClassName="h-auto w-[min(300px,100%)] max-[560px]:w-[min(250px,75vw)]" />
+        <div className="site-container flex h-[85px] items-center justify-start gap-[30px] max-[1100px]:gap-[18px] max-[800px]:h-[70px] max-[800px]:gap-3 max-[560px]:h-[60px]">
+          <Brand imageClassName="h-auto w-[250px] max-[800px]:w-[200px] max-[560px]:w-[180px]" />
           <nav className="ml-0.5 flex h-full translate-y-1.5 items-center gap-[clamp(17px,2.75vw,34px)] max-[1100px]:gap-3.5 max-[800px]:hidden" aria-label={siteCopy.header.navigationLabel}>
             {siteNavigation.map((item) => {
               const menu = dropdownMenus[item.page];
@@ -120,7 +119,7 @@ export function SiteHeader() {
         role="dialog"
       >
         <div className="flex min-h-[70px] items-center justify-between gap-4 border-b border-white/13 pb-[17px]">
-          <Brand imageClassName="h-auto w-[min(190px,55vw)] brightness-0 invert" />
+          <Brand imageClassName="h-auto w-[250px] max-[800px]:w-[200px] max-[560px]:w-[180px]" />
           <button aria-label="Close navigation menu" className="grid h-[42px] w-[42px] flex-none cursor-pointer place-items-center border-0 bg-transparent text-white [&_svg]:size-[22px]" onClick={closeMenu} type="button"><Icon name="close" /></button>
         </div>
         <nav aria-label={siteCopy.header.mobileNavigationLabel} className="grid pt-2">
