@@ -1,9 +1,5 @@
-import type { Metadata } from "next";
-import { BlogDetailsPage } from "@/components/blog-details";
-import { getPageMetadata } from "@/data";
+import { redirect } from "next/navigation";
 
-export const metadata: Metadata = getPageMetadata("blog-details");
-
-export default function BlogDetails() {
-  return <BlogDetailsPage />;
+export default function BlogDetailsRedirect() {
+  redirect("/blog");
 }

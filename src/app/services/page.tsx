@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { ServicesPage } from "@/components/services";
+import { ServicesPage } from "@/components/services/page";
 import { getPageMetadata } from "@/data";
 
 export const metadata: Metadata = getPageMetadata("services");

@@ -1,9 +1,5 @@
-import type { Metadata } from "next";
-import { ServiceDetailsPage } from "@/components/service-details";
-import { getPageMetadata } from "@/data";
+import { redirect } from "next/navigation";
 
-export const metadata: Metadata = getPageMetadata("services-details");
-
-export default function ServiceDetails() {
-  return <ServiceDetailsPage />;
+export default function ServiceDetailsRedirect() {
+  redirect("/services");
 }
