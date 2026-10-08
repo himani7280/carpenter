@@ -6,9 +6,9 @@ import { Icon, SocialIcon } from "@/components/common/icon";
 const columnTitle = "relative mb-6 pb-3 text-[16px] font-semibold tracking-[1.5px] text-white uppercase after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-8 after:bg-[#c7863d] max-[560px]:text-[14px]";
 const column = "grid content-start gap-3.5 max-[560px]:gap-[9px]";
 const columnLink = "relative pl-6 text-[14px] text-[#f1ece7] transition duration-180 before:absolute before:left-0 before:text-[22px] before:leading-[18px] before:font-bold before:text-[#f0a04b] before:content-['›'] hover:translate-x-[3px] hover:text-[#f0a04b] max-[560px]:pl-4 max-[560px]:text-[12px]";
-const socialLink = "grid size-[42px] place-items-center rounded-full border border-[#b7793d] text-white transition duration-180 hover:-translate-y-[3px] hover:bg-[#a96e30] [&_svg]:size-[18px]";
+const socialLink = "grid size-[42px] place-items-center rounded-full border border-[#b7793d] text-white transition duration-180 hover:-translate-y-[3px] hover:bg-accent hover:border-accent [&_svg]:size-[18px]";
 const contactItem = "grid grid-cols-[44px_minmax(0,1fr)] items-center gap-3.5";
-const contactIcon = "grid size-11 place-items-center rounded-full bg-[#8c5a1f] text-white [&_svg]:size-[19px]";
+const contactIcon = "grid size-11 place-items-center rounded-full bg-[#8c5a1f] text-white transition duration-200 hover:bg-accent [&_svg]:size-[19px]";
 const contactTitle = "mb-0.5 block text-[14px] font-semibold text-[#e5a76a]";
 const contactText = "block text-[14px] leading-normal [overflow-wrap:break-word] text-white max-[560px]:text-[12px]";
 const legalLink = "text-[14px] whitespace-nowrap text-white max-[560px]:text-[11px]";
@@ -25,7 +25,7 @@ export function SiteFooter() {
   ];
 
   return (
-    <footer className="font-footer bg-[#0d0c0b] text-white">
+    <footer className="bg-[#0d0c0b] text-white">
       <div className="bg-[#130e0a] bg-[image:linear-gradient(#130e0a,rgb(19_14_10/0)_42%),url('/images/footer-top.jpg'),url('/images/footer-bottom.jpg')] bg-[length:100%_7.86vw,100%_auto,100%_auto] bg-position-[center_bottom,center_top,center_bottom] bg-no-repeat pt-[clamp(80px,8vw,115px)] pb-[clamp(90px,8.5vw,125px)] max-[560px]:pt-[70px] max-[560px]:pb-[80px]">
 
         {/* Responsive Grid Layout */}

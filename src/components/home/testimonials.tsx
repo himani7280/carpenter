@@ -24,7 +24,7 @@ export function Testimonials() {
                 <Image alt={`Portrait of ${content.author}`} className="object-cover object-[center_20%] transition-transform duration-700 ease-[cubic-bezier(0.2,0.7,0.2,1)] group-hover:scale-[1.045]" fill sizes="(max-width: 650px) 45vw, (max-width: 1000px) 30vw, 15vw" src={imageUrl} />
               </div>
               <div className="flex min-w-0 flex-col p-3">
-                <span aria-hidden="true" className="font-[Georgia,serif] text-[56px] font-bold leading-[0.7] text-[#bd8740]">“</span>
+                <span aria-hidden="true" className="text-[56px] font-bold leading-[0.7] text-[#bd8740]">“</span>
                 <p className="mt-0.5 mb-2 text-[11.5px] leading-[1.5] text-[#3b393e] max-[560px]:text-[11px]" data-motion-flip="up">{content.quote}</p>
                 <div aria-label={`${content.rating} out of 5 stars`} className="mt-auto text-[18px] leading-none tracking-[2px] text-[#c18435]">{"★".repeat(content.rating)}</div>
                 <div className="mt-1.5 grid gap-0 border-t border-[#e8ded2] pt-1.5 text-left"><strong className="text-[14px] font-bold text-[#25252a]">{content.author}</strong><small className="text-[11px] text-[#5b585e]">{content.role}</small></div>

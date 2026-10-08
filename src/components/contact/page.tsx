@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { siteCopy, siteMetadata } from "@/data";
 import { ContactInfo } from "@/components/contact/contact-info";
 import { PageBanner } from "@/components/common/page-elements";
@@ -8,7 +11,13 @@ import { buttonGold, eyebrow, sectionSpace } from "@/components/common/styles";
 const field = "min-h-[43px] w-full rounded-[4px] border border-[#e7e3df] bg-white px-3 py-[11px] text-[12px] text-ink outline-0 focus:border-[#b88350] focus:shadow-[0_0_0_3px_rgb(184_121_62/12%)]";
 
 export function ContactPage() {
+  const router = useRouter();
   const content = siteCopy.contact;
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    router.push("/thank-you");
+  };
 
   return (
     <>
@@ -21,7 +30,7 @@ export function ContactPage() {
                 <ContactInfo icon="phone" title={content.callTitle}><a href={`tel:${siteMetadata.phoneLink}`}>{siteMetadata.phone}</a></ContactInfo>
                 <ContactInfo icon="mail" title={content.emailTitle}><a href={`mailto:${siteMetadata.email}`}>{siteMetadata.email}</a></ContactInfo>
               </div>
-              <form action={`mailto:${siteMetadata.email}`} className="rounded-md border border-[#e9e5df] px-5 py-[19px] max-[560px]:px-3.5 max-[560px]:py-[17px]" data-motion-effect="fade-up" encType="text/plain" method="post">
+              <form className="rounded-md border border-[#e9e5df] px-5 py-[19px] max-[560px]:px-3.5 max-[560px]:py-[17px]" data-motion-effect="fade-up" onSubmit={handleSubmit}>
                 <span className={`${eyebrow} text-[10px] tracking-[1px] text-[#98642f]`}>{content.formEyebrow}</span>
                 <h2 className="mt-2 mb-[5px] text-[25px] tracking-[-0.5px] max-[560px]:text-[22px]">{content.formTitle}</h2>
                 <p className="mb-[15px] text-[12px] text-[#544f4b]">{content.formDescription}</p>
@@ -50,11 +59,11 @@ export function ContactPage() {
                   referrerPolicy="no-referrer-when-downgrade"
                 />
               </div>
-              <div className="grid grid-cols-2 content-center gap-2.5 rounded-[7px] bg-[#f8f3ed] p-[18px] max-[560px]:gap-0.5 max-[560px]:p-2.5">
+              <div className="grid grid-cols-2 content-center gap-4 max-[560px]:gap-3">
                 {content.benefits.map(([icon, title, text]) => (
-                  <div className="flex items-start gap-[11px] p-2.5 max-[560px]:gap-[7px] max-[560px]:px-1 max-[560px]:py-2" data-motion-effect="zoom-in" key={title}>
-                    <Icon className="size-8 flex-none rounded-full bg-[#f0e3d4] p-1.5 text-[#9b642e] max-[560px]:size-[27px]" name={icon as Parameters<typeof Icon>[0]["name"]} />
-                    <span><strong className="mb-[5px] block text-[12px] max-[560px]:text-[10px]">{title}</strong><small className="block text-[10px] leading-[1.45] text-[#524c47] max-[560px]:text-[9px]">{text}</small></span>
+                  <div className="group flex items-start gap-3 rounded-[5px] border border-[#eee8e1] bg-white p-[13px] transition duration-[220ms] hover:-translate-y-[3px] hover:border-[#c99662] hover:shadow-[0_9px_22px_rgb(43_32_23/8%)] max-[560px]:p-2.5 max-[560px]:gap-2" data-motion-effect="zoom-in" key={title}>
+                    <span className="grid size-[44px] flex-none place-items-center rounded-lg bg-[#f9ece0] text-bronze [transition:background-color_240ms,color_240ms,transform_420ms] group-hover:rotate-y-180 group-hover:bg-accent group-hover:text-white max-[560px]:size-[34px] [&_svg]:size-[22px] max-[560px]:[&_svg]:size-[18px]"><Icon name={icon as Parameters<typeof Icon>[0]["name"]} /></span>
+                    <span><strong className="mb-1 block text-[13px] transition-colors duration-180 group-hover:text-bronze max-[560px]:text-[11px]">{title}</strong><small className="block text-[11px] leading-[1.45] text-[#544f4b] max-[560px]:text-[9px]">{text}</small></span>
                   </div>
                 ))}
               </div>

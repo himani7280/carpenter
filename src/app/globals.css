@@ -16,8 +16,6 @@
 
 @theme inline {
   --font-sans: var(--font-montserrat-next), Arial, Helvetica, sans-serif;
-  --font-footer: var(--font-poppins-next), Arial, Helvetica, sans-serif;
-  --font-banner: var(--font-roboto-next), Arial, Helvetica, sans-serif;
 }
 
 @utility site-container {

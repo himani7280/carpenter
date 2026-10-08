@@ -51,16 +51,17 @@ export function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-30" id="site-header">
-      <div className="h-[38px] bg-brown-dark text-[12px] text-white max-[800px]:hidden">
+      <div className="relative h-[38px] bg-brown-dark text-[12px] text-white max-[800px]:hidden overflow-hidden">
         <div className="site-container flex h-full items-center justify-between">
           <span className={topbarLink}><Icon name="pin" /> {siteCopy.brand.tagline}</span>
           <div className="flex h-full items-center">
             <a className={topbarLink} href={`tel:${siteMetadata.phoneLink}`}><Icon name="phone" />{siteMetadata.phone}</a>
-            <a className={`${topbarLink} ml-[35px]`} href={`mailto:${siteMetadata.email}`}><Icon name="mail" />{siteMetadata.email}</a>
-            <span aria-label="Social media" className="ml-[40px] flex items-center gap-5 border-l border-[rgb(245_228_210/25%)] pl-[30px] text-white">
-              <a aria-label="Facebook" className="transition-colors hover:text-gold-light" href="https://www.facebook.com/" rel="noreferrer" target="_blank"><SocialIcon className="size-4" name="facebook" /></a>
-              <a aria-label="Instagram" className="transition-colors hover:text-gold-light" href="https://www.instagram.com/" rel="noreferrer" target="_blank"><SocialIcon className="size-4" name="instagram" /></a>
-              <a aria-label="YouTube" className="transition-colors hover:text-gold-light" href="https://www.youtube.com/" rel="noreferrer" target="_blank"><SocialIcon className="size-4" name="youtube" /></a>
+            <span className="mx-4 text-white/30">|</span>
+            <a className={topbarLink} href={`mailto:${siteMetadata.email}`}><Icon name="mail" />{siteMetadata.email}</a>
+            <span aria-label="Social media" className="ml-[35px] flex h-full items-center gap-5 bg-[linear-gradient(110deg,#c48748,#9e5928)] pl-[35px] pr-[100vw] -mr-[100vw] text-white [clip-path:polygon(15px_0,100%_0,100%_100%,0_100%)]">
+              <a aria-label="Facebook" className="transition-colors hover:text-white/80" href="https://www.facebook.com/" rel="noreferrer" target="_blank"><SocialIcon className="size-4" name="facebook" /></a>
+              <a aria-label="Instagram" className="transition-colors hover:text-white/80" href="https://www.instagram.com/" rel="noreferrer" target="_blank"><SocialIcon className="size-4" name="instagram" /></a>
+              <a aria-label="YouTube" className="transition-colors hover:text-white/80" href="https://www.youtube.com/" rel="noreferrer" target="_blank"><SocialIcon className="size-4" name="youtube" /></a>
             </span>
           </div>
         </div>

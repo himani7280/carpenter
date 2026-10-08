@@ -31,10 +31,10 @@ export function PageBanner({
   const pageTitle = customBreadcrumb?.label ?? content.title;
 
   return (
-    <section className="relative grid min-h-[330px] place-items-center overflow-hidden bg-[#30251e] bg-[url('/images/carpenter-hero.webp')] bg-position-[center_44%] bg-cover bg-no-repeat text-center text-white before:absolute before:inset-0 before:bg-[rgb(22_17_14/76%)] max-[560px]:min-h-[215px]">
+    <section className="relative grid min-h-[330px] place-items-center overflow-hidden bg-[#30251e] bg-[url('/images/carpenter-hero.jpeg')] bg-position-[center_44%] bg-cover bg-no-repeat text-center text-white before:absolute before:inset-0 before:bg-[rgb(22_17_14/76%)] max-[560px]:min-h-[215px]">
       <div className="site-container relative z-1 py-[50px] max-[560px]:py-[35px]">
-        <h1 className="font-banner mb-[21px] text-[clamp(32px,4vw,48px)] font-bold tracking-[-1.5px] max-[560px]:mb-[13px] max-[560px]:text-[32px]" data-motion-effect="fade-down">{pageTitle}</h1>
-        <nav aria-label="Breadcrumb" className="font-banner flex justify-center gap-[11px] text-[14px] text-white max-[560px]:text-[12px]" data-motion-flip="up">
+        <h1 className="mb-[21px] text-[clamp(32px,4vw,48px)] font-bold tracking-[-1.5px] max-[560px]:mb-[13px] max-[560px]:text-[32px]" data-motion-effect="fade-down">{pageTitle}</h1>
+        <nav aria-label="Breadcrumb" className="flex justify-center gap-[11px] text-[14px] text-white max-[560px]:text-[12px]" data-motion-flip="up">
           {trail.map((crumb) => (
             <Fragment key={crumb.href}>
               <Link className="text-[#d8a066]" href={crumb.href}>{crumb.label}</Link>
@@ -65,7 +65,7 @@ export function HighlightedTitle({ first, highlight, breakBeforeHighlight = fals
 export function AboutPhoto({ alt }: { alt: string }) {
   return (
     <div className={aboutPhotoWrap} data-motion-effect="zoom-out">
-      <Image alt={alt} className={aboutPhoto} fill sizes="(max-width: 800px) 100vw, 50vw" src="/images/carpenter-hero.webp" />
+      <Image alt={alt} className={aboutPhoto} fill sizes="(max-width: 800px) 100vw, 50vw" src="/images/carpenter-hero.jpeg" />
       <div className={experienceBadge}>
         <strong className="text-[45px] leading-none max-[560px]:text-[33px]">10+</strong>
         <span className="mt-[9px] text-[11px] leading-[1.45] tracking-[2px] uppercase max-[560px]:text-[8px]">Years of<br />Experience</span>

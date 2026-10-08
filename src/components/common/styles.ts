@@ -8,7 +8,7 @@ export const buttonOutline = "border-[#a66a31] bg-transparent text-[#855025] hov
 
 export const eyebrow = "inline-flex items-center gap-[13px] font-extrabold uppercase max-[560px]:gap-2";
 
-export const roundArrow = "grid flex-none place-items-center rounded-full bg-accent text-white transition duration-300 hover:translate-x-0.5 [&_svg]:transition-transform [&_svg]:duration-300";
+export const roundArrow = "grid flex-none place-items-center rounded-full bg-[#f9ece0] text-bronze transition-colors duration-300 hover:bg-accent hover:text-white group-hover:bg-accent group-hover:text-white [&_svg]:transition-transform [&_svg]:duration-300";
 
 export const aboutGrid = "site-container grid grid-cols-2 items-center gap-[clamp(44px,7vw,95px)] max-[800px]:grid-cols-1 max-[800px]:gap-[34px] max-[560px]:gap-[29px]";
 export const aboutTitle = "mt-4 mb-[17px] text-[clamp(34px,3.6vw,48px)] leading-[1.12] font-[750] tracking-[-1.25px] text-ink max-[560px]:my-[9px] max-[560px]:text-[30px] max-[560px]:tracking-[-0.7px]";

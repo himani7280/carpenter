@@ -18,8 +18,6 @@ export function BlogDetailsPage({ post }: { post: BlogPost }) {
   const { article } = blogContent;
   const [first, second] = article.sections;
   const currentIndex = blogPosts.findIndex((p) => p.slug === post.slug);
-  const previous = blogPosts[currentIndex > 0 ? currentIndex - 1 : blogPosts.length - 1];
-  const next = blogPosts[currentIndex < blogPosts.length - 1 ? currentIndex + 1 : 0];
 
   return (
     <>
@@ -32,7 +30,6 @@ export function BlogDetailsPage({ post }: { post: BlogPost }) {
             <article>
               <Image alt={post.title} className="h-auto max-h-[470px] w-full rounded-md object-cover max-[560px]:max-h-[280px]" height={620} sizes="(max-width: 850px) 100vw, 65vw" src={post.image} width={1000} />
               <div className="mt-4 mb-3 flex flex-wrap items-center gap-3">
-                <span className="inline-block bg-[#f5eee6] px-2.5 py-1 text-[10px] font-extrabold tracking-[1.1px] text-[#885624] uppercase">{post.category}</span>
                 <span className="text-[13px] text-[#9d6937]">{post.date}</span>
               </div>
               <h1 className="mb-4 text-[clamp(24px,3vw,36px)] font-[750] leading-[1.2] tracking-[-0.8px] text-ink">{post.title}</h1>
@@ -70,10 +67,6 @@ export function BlogDetailsPage({ post }: { post: BlogPost }) {
                 <p className={articleText}>{article.closing}</p>
               </div>
 
-              <div className="mt-8 grid grid-cols-2 gap-6 border-t border-[#e5e0da] pt-5 max-[560px]:grid-cols-1" data-motion-effect="fade-up">
-                <Link className="group" href={`/blog/${previous.slug}`}><span className="flex items-center gap-2 text-[14px] font-bold text-bronze"><Icon className="size-4 rotate-180" name="arrow" />{article.previousLabel}</span><small className="mt-1 block text-[13px] text-body transition-colors group-hover:text-bronze">{previous.title}</small></Link>
-                <Link className="group text-right max-[560px]:text-left" href={`/blog/${next.slug}`}><span className="flex items-center justify-end gap-2 text-[14px] font-bold text-bronze max-[560px]:justify-start">{article.nextLabel}<Icon className="size-4" name="arrow" /></span><small className="mt-1 block text-[13px] text-body transition-colors group-hover:text-bronze">{next.title}</small></Link>
-              </div>
             </article>
             <aside className="grid gap-5 max-[800px]:grid-cols-2 max-[560px]:grid-cols-1">
               <div className={panel} data-motion-effect="fade-left">
@@ -85,18 +78,8 @@ export function BlogDetailsPage({ post }: { post: BlogPost }) {
                   </Link>
                 ))}
               </div>
-              <div className={panel} data-motion-effect="fade-left">
-                <h2 className={panelTitle}>{article.categoriesTitle}</h2>
-                {article.categories.map(([category, count]) => {
-                  const matchingPost = blogPosts.find(p => p.category === category);
-                  const href = matchingPost ? `/blog/${matchingPost.slug}` : "/blog";
-                  const label = matchingPost ? matchingPost.title : category;
-                  return (
-                    <Link className="flex justify-between gap-2.5 border-b border-[#eee9e4] py-[11px] text-[13px] last:border-0" href={href} key={category}>{label}<span className="ml-auto text-[#9d6937]">{count}</span><span className="text-[#9d6937]">›</span></Link>
-                  );
-                })}
-              </div>
-              <div className="relative overflow-hidden rounded-[7px] bg-[#2b1e16] bg-[url('/images/carpenter-hero.webp')] bg-position-[center_40%] bg-cover p-6 text-white before:absolute before:inset-0 before:bg-[rgb(31_21_15/78%)] max-[800px]:col-span-full" data-motion-effect="fade-left">
+
+              <div className="relative overflow-hidden rounded-[7px] bg-[#2b1e16] bg-[url('/images/carpenter-hero.jpeg')] bg-position-[center_40%] bg-cover p-6 text-white before:absolute before:inset-0 before:bg-[rgb(31_21_15/78%)] max-[800px]:col-span-full" data-motion-effect="fade-left">
                 <div className="relative">
                   <span className="grid size-14 place-items-center rounded-full bg-accent text-white outline-1 outline-offset-4 outline-accent/50 [&_svg]:size-7"><Icon name="headset" /></span>
                   <h2 className="mt-4 text-[26px] font-bold">{article.help.title}</h2>

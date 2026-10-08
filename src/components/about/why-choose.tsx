@@ -17,9 +17,9 @@ export function WhyChoose() {
           <p className="mb-6 text-[14px] leading-[1.7] text-body">{description}</p>
           <div>
             {items.map(([icon, itemTitle, text]) => (
-              <div className="flex items-start gap-4 border-b border-[#e5e0da] py-5 first:pt-0" key={itemTitle}>
-                <span className="grid size-[66px] flex-none place-items-center rounded-full bg-[#f9ece0] text-bronze max-[560px]:size-14 [&_svg]:size-[30px]"><Icon name={icon as IconName} /></span>
-                <span><strong className="mb-1 block text-[18px] text-ink max-[560px]:text-[16px]">{itemTitle}</strong><small className="block text-[13px] leading-[1.6] text-body">{text}</small></span>
+              <div className="group flex items-start gap-4 rounded-[5px] border border-[#eee8e1] bg-white p-[15px] mb-4 last:mb-0 transition duration-[220ms] hover:-translate-y-[3px] hover:border-[#c99662] hover:shadow-[0_9px_22px_rgb(43_32_23/8%)]" key={itemTitle}>
+                <span className="grid size-[66px] flex-none place-items-center rounded-full bg-[#f9ece0] text-bronze [transition:background-color_240ms,color_240ms,transform_420ms] group-hover:rotate-y-180 group-hover:bg-accent group-hover:text-white max-[560px]:size-14 [&_svg]:size-[30px]"><Icon name={icon as IconName} /></span>
+                <span><strong className="mb-1 block text-[18px] text-ink transition-colors duration-180 group-hover:text-bronze max-[560px]:text-[16px]">{itemTitle}</strong><small className="block text-[13px] leading-[1.6] text-body">{text}</small></span>
               </div>
             ))}
           </div>

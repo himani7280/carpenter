@@ -8,7 +8,7 @@ export function Achievements() {
   const { eyebrow, title, highlight, description, stats } = achievementsContent;
 
   return (
-    <section className="relative overflow-hidden bg-[#2b1e16] bg-[url('/images/carpenter-hero.webp')] bg-position-[center_42%] bg-cover bg-no-repeat py-[62px] text-white before:absolute before:inset-0 before:bg-[rgb(31_21_15/80%)] max-[560px]:py-[43px]">
+    <section className="relative overflow-hidden bg-[#2b1e16] bg-[url('/images/carpenter-hero.jpeg')] bg-position-[center_42%] bg-cover bg-no-repeat py-[62px] text-white before:absolute before:inset-0 before:bg-[rgb(31_21_15/80%)] max-[560px]:py-[43px]">
       <div className="site-container relative">
         <SectionTitle light eyebrow={eyebrow} title={<HighlightedTitle first={title} highlight={highlight} breakBeforeHighlight />} description={description} />
         <div className="grid grid-cols-4 gap-y-10 max-[800px]:grid-cols-2">
