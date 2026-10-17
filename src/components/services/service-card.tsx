@@ -20,13 +20,13 @@ export function ServiceCard({ service }: { service: (typeof carpenterServices)[n
       <div className="pb-5">
         <div className="flex min-h-[64px] items-center gap-4 pr-4">
           <span className="relative z-1 -mt-9 grid h-[78px] w-[88px] flex-none place-content-center justify-items-center bg-[linear-gradient(135deg,#6f4120,#b47a3f)] pr-4 text-white [clip-path:polygon(0_0,80%_0,100%_72%,0_100%)]">
-            <strong className="text-[26px] leading-none font-extrabold">{service.number}</strong>
+            <strong className="font-heading text-[26px] leading-none font-extrabold">{service.number}</strong>
             <i className="mt-1.5 h-px w-5 bg-white/70" />
           </span>
-          <h3 className="flex-1 text-[20px] leading-[1.15] font-bold group-hover:text-bronze max-[560px]:text-[18px]" data-motion-flip={Number(service.number) % 2 ? "left" : "right"}><Link href={service.href}>{service.title}</Link></h3>
+          <h3 className="font-heading flex-1 text-[19px] leading-[1.2] font-bold group-hover:text-bronze max-[560px]:text-[17.5px]" data-motion-flip={Number(service.number) % 2 ? "left" : "right"}><Link href={service.href}>{service.title}</Link></h3>
           <Link aria-label={`Read about ${service.title}`} className={`${roundArrow} size-[39px] group-hover:[&_svg]:-rotate-45 max-[560px]:size-[34px] [&_svg]:size-[19px]`} href={service.href}><Icon name="arrow" /></Link>
         </div>
-        <p className="mt-1 pr-6 pl-[51px] text-[13px] leading-[1.6] text-[#544f4b]">{service.description}</p>
+        <p className="mt-1 pr-6 pl-[51px] text-[13.5px] leading-[1.6] text-[#544f4b]">{service.description}</p>
       </div>
     </article>
   );

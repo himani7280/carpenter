@@ -1,5 +1,9 @@
 import rawData from "./data.json";
 
+export const carpenterTemplate = rawData.Carpenter;
+export const templateComponents = rawData.Carpenter.templateComponents;
+export const sections = rawData.Carpenter.sections;
+
 export const pageNames = rawData.pageNames as unknown as readonly [
   "home",
   "about",
@@ -23,7 +27,7 @@ export const pageContent = rawData.pageContent;
 export const pageSeo = rawData.pageSeo;
 
 export function getPageMetadata(page: SitePageName) {
-  return (pageSeo as any)[page];
+  return (pageSeo as Record<string, unknown>)[page] as import("next").Metadata;
 }
 
 export const siteCopy = rawData.siteCopy;

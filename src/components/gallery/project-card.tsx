@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import { projectGallery } from "@/data";
 import { Icon } from "@/components/common/icon";
 import { roundArrow } from "@/components/common/styles";

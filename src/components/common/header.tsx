@@ -7,15 +7,13 @@ import { siteCopy, siteMetadata, siteNavigation } from "@/data";
 import { Brand } from "@/components/common/brand";
 import { Icon, SocialIcon } from "@/components/common/icon";
 
-const navLink = "relative inline-flex h-full items-center whitespace-nowrap text-[15px] font-semibold after:absolute after:inset-x-0 after:bottom-[27px] after:h-0.5 after:scale-x-0 after:bg-gold after:transition-transform after:duration-180 hover:after:scale-x-100 max-[1100px]:text-[13px]";
+const navLink = "relative inline-flex h-full items-center whitespace-nowrap text-[15px] font-semibold after:absolute after:inset-x-0 after:bottom-[24px] after:h-0.5 after:scale-x-0 after:bg-gold after:transition-transform after:duration-180 hover:after:scale-x-100 max-[1100px]:text-[13px]";
 const navLinkState = (active: boolean) => (active ? "text-brown after:scale-x-100" : "text-[#242229]");
 const dropdownLink = "rounded-[3px] px-3 py-[11px] text-[13px] text-ink hover:bg-cream hover:text-gold";
 const topbarLink = "flex items-center gap-[9px] [&_svg]:size-3.5";
 const drawerLink = "flex items-center justify-between gap-4 border-b border-white/11 font-semibold transition-[color,padding] duration-180 hover:pl-[5px] hover:text-[#d59a58]";
 const drawerSubLink = `min-h-[42px] border-white/8 text-[13px] text-[#e7d6c6] ${drawerLink}`;
 const drawerContactLink = "flex items-center gap-[11px] text-[12px] text-[#e7d6c6] [&_svg]:size-[17px] [&_svg]:text-[#d59a58]";
-
-const { header } = siteCopy;
 
 // Nav items that open a dropdown: the listing page plus its details page.
 const dropdownMenus: Record<string, { label: string; detailPage: string; links: { href: string; page: string; label: string }[] }> = {
@@ -67,9 +65,12 @@ export function SiteHeader() {
         </div>
       </div>
       <div className="relative z-10 bg-white shadow-[0_2px_12px_rgb(36_27_20/5%)]">
-        <div className="site-container flex h-[85px] items-center justify-start gap-[30px] max-[1100px]:gap-[18px] max-[800px]:h-[70px] max-[800px]:gap-3 max-[560px]:h-[60px]">
-          <Brand imageClassName="h-auto w-[250px] max-[800px]:w-[200px] max-[560px]:w-[180px]" />
-          <nav className="ml-0.5 flex h-full translate-y-1.5 items-center gap-[clamp(17px,2.75vw,34px)] max-[1100px]:gap-3.5 max-[800px]:hidden" aria-label={siteCopy.header.navigationLabel}>
+        <div className="site-container flex h-[80px] items-center justify-between max-[800px]:h-[68px] max-[560px]:h-[58px]">
+          <div className="flex flex-1 items-center justify-start">
+            <Brand imageClassName="h-auto w-[240px] max-[1100px]:w-[210px] max-[800px]:w-[185px] max-[560px]:w-[160px]" />
+          </div>
+
+          <nav className="flex h-full flex-none items-center justify-center gap-[clamp(14px,1.8vw,28px)] max-[1100px]:gap-2.5 max-[800px]:hidden" aria-label={siteCopy.header.navigationLabel}>
             {siteNavigation.map((item) => {
               const menu = dropdownMenus[item.page];
               const isActive = currentPage === item.page || (!!menu && currentPage === menu.detailPage);
@@ -90,17 +91,20 @@ export function SiteHeader() {
               );
             })}
           </nav>
-          <Link className="ml-auto inline-flex min-h-[54px] translate-y-2 flex-none items-center justify-center gap-5.5 rounded-sm border border-transparent bg-[linear-gradient(110deg,#9e5928,#c48748)] px-5.25 text-[14px] font-bold text-white transition-colors duration-180 hover:bg-none hover:bg-[#75421f] max-[1100px]:gap-3 max-[1100px]:px-3.5 max-[1100px]:text-[12px] max-[800px]:hidden [&_svg]:size-4.5" href="/contact">{siteCopy.header.enquireLabel} <Icon name="arrow" /></Link>
-          <button
-            aria-controls="mobile-site-menu"
-            aria-expanded={menuOpen}
-            aria-label={menuOpen ? "Close navigation menu" : siteCopy.header.openMenuLabel}
-            className="ml-auto hidden h-[43px] w-[43px] flex-none cursor-pointer place-items-center rounded-[4px] border border-line bg-white text-brown max-[800px]:grid max-[560px]:h-[39px] max-[560px]:w-[38px]"
-            onClick={() => setMenuOpen((open) => !open)}
-            type="button"
-          >
-            <Icon className="h-5 w-5" name={menuOpen ? "close" : "menu"} />
-          </button>
+
+          <div className="flex flex-1 items-center justify-end">
+            <Link className="inline-flex min-h-[46px] flex-none items-center justify-center gap-3 rounded-sm border border-transparent bg-[linear-gradient(110deg,#9e5928,#c48748)] px-5 text-[13.5px] font-bold text-white transition-colors duration-180 hover:bg-none hover:bg-[#75421f] max-[1100px]:gap-2 max-[1100px]:px-3.5 max-[1100px]:text-[12px] max-[800px]:hidden [&_svg]:size-4" href="/contact">{siteCopy.header.enquireLabel} <Icon name="arrow" /></Link>
+            <button
+              aria-controls="mobile-site-menu"
+              aria-expanded={menuOpen}
+              aria-label={menuOpen ? "Close navigation menu" : siteCopy.header.openMenuLabel}
+              className="hidden h-[43px] w-[43px] flex-none cursor-pointer place-items-center rounded-[4px] border border-line bg-white text-brown max-[800px]:grid max-[560px]:h-[39px] max-[560px]:w-[38px]"
+              onClick={() => setMenuOpen((open) => !open)}
+              type="button"
+            >
+              <Icon className="h-5 w-5" name={menuOpen ? "close" : "menu"} />
+            </button>
+          </div>
         </div>
       </div>
       <button
@@ -120,7 +124,7 @@ export function SiteHeader() {
         role="dialog"
       >
         <div className="flex min-h-[70px] items-center justify-between gap-4 border-b border-white/13 pb-[17px]">
-          <Brand imageClassName="h-auto w-[250px] max-[800px]:w-[200px] max-[560px]:w-[180px]" />
+          <Brand imageClassName="h-auto w-[210px] max-[560px]:w-[175px]" variant="white" />
           <button aria-label="Close navigation menu" className="grid h-[42px] w-[42px] flex-none cursor-pointer place-items-center border-0 bg-transparent text-white [&_svg]:size-[22px]" onClick={closeMenu} type="button"><Icon name="close" /></button>
         </div>
         <nav aria-label={siteCopy.header.mobileNavigationLabel} className="grid pt-2">

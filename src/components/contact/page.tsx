@@ -22,7 +22,7 @@ export function ContactPage() {
   return (
     <>
         <PageBanner page="contact" />
-        <section className={`bg-white ${sectionSpace}`}>
+        <section className={sectionSpace}>
           <div className="site-container">
             <div className="grid grid-cols-[0.88fr_1.16fr_1fr] items-stretch gap-[17px] max-[1100px]:grid-cols-[1fr_1.25fr] max-[560px]:grid-cols-1 max-[560px]:gap-3">
               <div className="grid content-start gap-[9px]">
@@ -31,9 +31,9 @@ export function ContactPage() {
                 <ContactInfo icon="mail" title={content.emailTitle}><a href={`mailto:${siteMetadata.email}`}>{siteMetadata.email}</a></ContactInfo>
               </div>
               <form className="rounded-md border border-[#e9e5df] px-5 py-[19px] max-[560px]:px-3.5 max-[560px]:py-[17px]" data-motion-effect="fade-up" onSubmit={handleSubmit}>
-                <span className={`${eyebrow} text-[10px] tracking-[1px] text-[#98642f]`}>{content.formEyebrow}</span>
-                <h2 className="mt-2 mb-[5px] text-[25px] tracking-[-0.5px] max-[560px]:text-[22px]">{content.formTitle}</h2>
-                <p className="mb-[15px] text-[12px] text-[#544f4b]">{content.formDescription}</p>
+                <span className={`${eyebrow} text-[10.5px] tracking-[1.2px] text-[#98642f]`}>{content.formEyebrow}</span>
+                <h2 className="font-heading mt-2 mb-2 text-[clamp(26px,2.6vw,34px)] leading-[1.15] font-bold tracking-[-0.8px] text-ink">{content.formTitle}</h2>
+                <p className="mb-4 text-[13px] text-[#544f4b]">{content.formDescription}</p>
                 <div className="grid grid-cols-2 gap-2.5">
                   <label className="relative block"><span className="sr-only">{content.nameLabel}</span><Icon className="pointer-events-none absolute top-[13px] left-3 size-4 text-[#9b642e]" name="user" /><input autoComplete="name" className={`${field} pl-9`} name="Name" placeholder={content.namePlaceholder} required /></label>
                   <label className="relative block"><span className="sr-only">{content.emailLabel}</span><Icon className="pointer-events-none absolute top-[13px] left-3 size-4 text-[#9b642e]" name="mail" /><input autoComplete="email" className={`${field} pl-9`} name="Email" placeholder={content.emailPlaceholder} required type="email" /></label>
@@ -41,22 +41,23 @@ export function ContactPage() {
                   <label className="relative block"><span className="sr-only">{content.subjectLabel}</span><Icon className="pointer-events-none absolute top-[13px] left-3 size-4 text-[#9b642e]" name="file" /><input className={`${field} pl-9`} name="Subject" placeholder={content.subjectPlaceholder} required /></label>
                   <label className="col-span-full relative block"><span className="sr-only">{content.messageLabel}</span><Icon className="pointer-events-none absolute top-[13px] left-3 size-4 text-[#9b642e]" name="chat" /><textarea className={`${field} min-h-28 resize-y pl-9`} name="Message" placeholder={content.messagePlaceholder} required rows={4} /></label>
                 </div>
-                <button className={`${buttonGold} mt-[11px] inline-flex min-h-[45px] flex-none cursor-pointer items-center justify-center gap-5.5 rounded-sm border border-transparent px-[18px] text-[11px] font-bold uppercase transition-colors duration-180 [&_svg]:size-4.5`} type="submit">{content.submitLabel} <Icon name="arrow" /></button>
+                <button className={`${buttonGold} mt-3 inline-flex min-h-[48px] flex-none cursor-pointer items-center justify-center gap-5 rounded-sm border border-transparent px-5 text-[12px] font-bold uppercase transition-colors duration-180 [&_svg]:size-4.5`} type="submit">{content.submitLabel} <Icon name="arrow" /></button>
               </form>
               <div className="relative min-h-[365px] overflow-hidden rounded-[7px] max-[1100px]:col-[1/-1] max-[1100px]:min-h-[300px] max-[560px]:col-auto max-[560px]:min-h-[260px]" data-motion-effect="zoom-out">
                 <Image alt="The WoodHaus carpentry and woodworking studio" className="object-cover" fill sizes="(max-width: 800px) 100vw, 30vw" src="/images/workshop-store.webp" />
               </div>
             </div>
             <div className="mt-[17px] grid grid-cols-[1.2fr_1fr] gap-[17px] max-[560px]:grid-cols-1 max-[560px]:gap-3">
-              <div className="relative min-h-[215px] overflow-hidden rounded-[7px] max-[560px]:min-h-[185px]" data-motion-effect="zoom-out">
+              <div className="relative min-h-[215px] overflow-hidden rounded-[7px] border border-[#e8ded2] shadow-[0_4px_16px_rgb(45_32_22/6%)] max-[560px]:min-h-[185px]" data-motion-effect="zoom-out">
                 <iframe
-                  src={`https://maps.google.com/maps?q=${encodeURIComponent(siteMetadata.address)}&t=&z=14&ie=UTF8&iwloc=&output=embed`}
-                  width="100%"
-                  height="100%"
-                  className="absolute inset-0 border-0"
                   allowFullScreen
+                  className="absolute inset-0 size-full border-0 [filter:grayscale(90%)_sepia(45%)_hue-rotate(345deg)_contrast(1.08)_brightness(0.96)] transition-[filter] duration-500 hover:[filter:grayscale(30%)_sepia(15%)]"
+                  height="100%"
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
+                  src={`https://maps.google.com/maps?q=${encodeURIComponent(siteMetadata.address)}&t=&z=14&ie=UTF8&iwloc=&output=embed`}
+                  title="WoodHaus Carpentry Studio Location"
+                  width="100%"
                 />
               </div>
               <div className="grid grid-cols-2 content-center gap-4 max-[560px]:gap-3">

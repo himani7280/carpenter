@@ -35,7 +35,7 @@ export function ProjectGrid() {
   };
 
   return (
-    <section className={`bg-[#fbfaf8] ${sectionSpace}`}>
+    <section className={sectionSpace}>
       <div className="site-container">
         <SectionTitle eyebrow={galleryContent.eyebrow} title={<HighlightedTitle first={galleryContent.title} highlight={galleryContent.highlight} />} description={galleryContent.description} />
         <div className="grid grid-cols-12 auto-rows-[205px] gap-3 max-[560px]:grid-cols-2 max-[560px]:auto-rows-[70px] max-[560px]:gap-2.5">
@@ -90,8 +90,8 @@ export function ProjectGrid() {
               sizes="100vw"
             />
             <div className="absolute -bottom-16 left-0 right-0 text-center text-white">
-              <h3 className="text-[22px] font-bold tracking-tight">{projectGallery[lightboxIndex].title}</h3>
-              <p className="mt-1 text-[13px] font-bold tracking-[1.4px] text-[#e4b778] uppercase">{projectGallery[lightboxIndex].category}</p>
+              <h3 className="font-heading text-[20px] font-bold tracking-tight">{projectGallery[lightboxIndex].title}</h3>
+              <p className="font-body mt-1 text-[12px] font-medium tracking-[1.4px] text-[#e4b778] uppercase">{projectGallery[lightboxIndex].category}</p>
             </div>
           </div>
           

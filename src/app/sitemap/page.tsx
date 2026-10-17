@@ -19,7 +19,7 @@ export default function SitemapPage() {
   return (
     <>
       <PageBanner page="sitemap" />
-      <section className={`bg-white ${sectionSpace}`}>
+      <section className={sectionSpace}>
         <div className="site-container">
           <SectionTitle eyebrow="Overview" title="Site Map" />
           <div className="mx-auto flex w-fit gap-[15vw] max-[800px]:gap-[10vw] max-[560px]:flex-col max-[560px]:gap-10">

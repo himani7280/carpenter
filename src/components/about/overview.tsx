@@ -3,11 +3,11 @@ import { AboutPhoto, HighlightedTitle } from "@/components/common/page-elements"
 import { Icon, type IconName } from "@/components/common/icon";
 import { aboutGrid, aboutText, aboutTitle, eyebrow, sectionSpace } from "@/components/common/styles";
 
-export function AboutOverview() {
+export function AboutOverview({ className }: { className?: string } = {}) {
   const { overview } = aboutContent;
 
   return (
-    <section className={`bg-white ${sectionSpace}`}>
+    <section className={className || sectionSpace}>
       <div className={aboutGrid}>
         <div data-motion-effect="fade-up">
           <span className={`${eyebrow} text-[12px] tracking-[2px] text-[#98642f] max-[560px]:text-[9px] max-[560px]:tracking-[1.6px]`}>{overview.eyebrow}</span>

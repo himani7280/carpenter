@@ -1,12 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
-import { carpenterServices, serviceTypes, servicesContent } from "@/data";
+import { carpenterServices, servicesContent } from "@/data";
 import { HighlightedTitle, PageBanner } from "@/components/common/page-elements";
 import { Icon, type IconName } from "@/components/common/icon";
 import { eyebrow, sectionSpace } from "@/components/common/styles";
 
 const leftEyebrow = `${eyebrow} text-[11px] tracking-[1.5px] text-[#98642f] before:h-px before:w-[33px] before:bg-[#ae773d] after:h-px after:w-[33px] after:bg-[#ae773d]`;
-const blockTitle = "mt-2.5 mb-2 text-[clamp(26px,2.6vw,34px)] leading-[1.15] font-[750] tracking-[-0.8px] text-ink";
+const blockTitle = "mt-2.5 mb-2 font-heading text-[clamp(28px,2.8vw,38px)] leading-[1.15] font-bold tracking-[-0.8px] text-ink";
 
 type ServiceType = (typeof carpenterServices)[number];
 
@@ -19,15 +19,15 @@ export function ServiceDetailsPage({ service }: { service: ServiceType }) {
           page="services-details"
           customBreadcrumb={{ label: service.title, parent: { href: "/services", label: "Services" } }}
         />
-        <section className={`bg-white ${sectionSpace}`}>
+        <section className={sectionSpace}>
           <div className="site-container">
             <div className="grid grid-cols-[minmax(0,1fr)_245px] items-start gap-[26px] max-[1100px]:grid-cols-1">
               <div>
                 <div className="grid grid-cols-[1.4fr_1fr] items-start gap-6 max-[800px]:grid-cols-1">
                   <article data-motion-effect="fade-up">
                     <span className={`${eyebrow} text-[11px] tracking-[1.5px] text-[#8c4a1c] before:h-px before:w-[26px] before:bg-[#ae773d]`}>{service.detail.eyebrow}</span>
-                    <h2 className="mt-3 mb-[17px] text-[clamp(29px,3vw,40px)] leading-[1.12] font-[750] tracking-[-1.25px] text-ink max-[560px]:text-[30px] max-[560px]:tracking-[-0.7px]"><HighlightedTitle first={service.detail.title} highlight={service.detail.highlight} /></h2>
-                    {service.detail.paragraphs.map((paragraph) => <p className="mb-[14px] text-[13px] leading-[1.7] text-body" key={paragraph}>{paragraph}</p>)}
+                    <h2 className="font-heading mt-2.5 mb-3 text-[clamp(28px,2.8vw,38px)] leading-[1.15] font-bold tracking-[-0.8px] text-ink"><HighlightedTitle first={service.detail.title} highlight={service.detail.highlight} /></h2>
+                    {service.detail.paragraphs.map((paragraph) => <p className="mb-[14px] text-[13.5px] leading-[1.7] text-body" key={paragraph}>{paragraph}</p>)}
                   </article>
                   <div className="relative min-h-[405px] overflow-hidden rounded-[8px] max-[560px]:min-h-[280px]" data-motion-effect="zoom-out">
                     <Image alt={service.detail.imageAlt} className="object-cover" fill sizes="(max-width: 800px) 100vw, 30vw" src={service.detail.image} />
@@ -35,9 +35,9 @@ export function ServiceDetailsPage({ service }: { service: ServiceType }) {
                 </div>
               </div>
               <aside className="overflow-hidden rounded-[8px] border border-[#ece6df] bg-white shadow-[0_6px_20px_rgb(43_32_23/6%)]" data-motion-effect="fade-left">
-                <h3 className="bg-[linear-gradient(110deg,#9a5b28,#c48748)] px-[18px] py-4 text-[18px] font-bold text-white">{detail.serviceListTitle}</h3>
+                <h3 className="font-heading bg-[linear-gradient(110deg,#9a5b28,#c48748)] px-4 py-3.5 text-[16px] font-bold text-white">{detail.serviceListTitle}</h3>
                 <div className="p-2">
-                  {carpenterServices.map((s, index) => (
+                  {carpenterServices.map((s) => (
                     <Link
                       className={`flex min-h-[44px] items-center justify-between gap-2.5 rounded-[6px] border-b border-[#efeae5] px-3 py-[9px] text-[13px] last:border-b-0 hover:bg-[#fbeee0] hover:text-[#8a5429] ${s.slug === service.slug ? "border-transparent bg-[#fbeee0] text-[#8a5429]" : ""}`}
                       href={s.href}
@@ -80,7 +80,7 @@ export function ServiceDetailsPage({ service }: { service: ServiceType }) {
               <p className="text-[14px] text-body">{detail.process.description}</p>
             </div>
             <div className="mt-6 grid grid-cols-4 gap-6 max-[800px]:grid-cols-2 max-[560px]:grid-cols-1">
-              {detail.process.steps.map(([icon, title, text], index) => (
+              {detail.process.steps.map(([icon, title, text]) => (
                 <div className="group flex items-center gap-3 rounded-[5px] border border-[#eee8e1] bg-white p-[11px] transition duration-[220ms] hover:-translate-y-[3px] hover:border-[#c99662] hover:shadow-[0_9px_22px_rgb(43_32_23/8%)]" data-motion-effect="zoom-in" key={title}>
                   <span className="grid size-[55px] flex-none place-items-center rounded-lg bg-[#f9ece0] text-bronze [transition:background-color_240ms,color_240ms,transform_420ms] group-hover:rotate-y-180 group-hover:bg-accent group-hover:text-white max-[560px]:size-[46px] [&_svg]:size-[27px]"><Icon name={icon as IconName} /></span>
                   <span><strong className="mb-[5px] block text-[14px] transition-colors duration-180 group-hover:text-bronze">{title}</strong><small className="block text-[12px] leading-[1.45] text-[#544f4b]">{text}</small></span>

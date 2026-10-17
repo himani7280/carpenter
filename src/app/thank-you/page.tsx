@@ -17,12 +17,12 @@ export default function ThankYouPage() {
               <path d="M5 13l4 4L19 7" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </div>
-          <h2 className="mb-4 text-4xl font-extrabold text-ink">Thank You!</h2>
-          <p className="mb-8 text-lg text-body">
+          <h2 className="font-heading mb-3 text-[clamp(24px,2.4vw,32px)] leading-[1.18] font-bold text-ink">Thank You!</h2>
+          <p className="mb-6 text-[15px] text-body">
             Your message has been successfully sent. Our team will get back to you shortly.
           </p>
           <Link
-            className="inline-flex min-h-[50px] items-center justify-center rounded-sm bg-[#c7863d] px-8 text-[15px] font-bold text-white transition-colors hover:bg-[#a96e30]"
+            className="inline-flex min-h-11 items-center justify-center rounded-sm bg-[#c7863d] px-6 text-[13.5px] font-bold text-white transition-colors hover:bg-[#a96e30]"
             href="/"
           >
             Back to Home

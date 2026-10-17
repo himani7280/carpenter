@@ -12,22 +12,64 @@
   --color-accent: #b7793d;
   --color-bronze: #a66d35;
 
+  --font-heading: var(--font-open-sans), "Open Sans", sans-serif;
+  --font-body: var(--font-poppins), "Poppins", sans-serif;
+  --font-sans: var(--font-poppins), "Poppins", sans-serif;
 }
 
 @theme inline {
-  --font-sans: var(--font-montserrat-next), Arial, Helvetica, sans-serif;
+  --font-heading: var(--font-open-sans), "Open Sans", sans-serif;
+  --font-body: var(--font-poppins), "Poppins", sans-serif;
+  --font-sans: var(--font-poppins), "Poppins", sans-serif;
+}
+
+/* Force Open Sans for all titles and headings */
+h1, h2, h3, h4, h5, h6, [data-hero] h1, .font-heading, .font-title {
+  font-family: var(--font-open-sans), "Open Sans", sans-serif;
+}
+
+/* Force Poppins for all body elements - strictly no 3rd font */
+html, body, p, span, a, button, input, textarea, select, label, strong, small, li, div {
+  font-family: var(--font-poppins), "Poppins", sans-serif;
+}
+
+/* Re-ensure headings override inherited body font */
+h1, h2, h3, h4, h5, h6, [data-hero] h1, .font-heading, .font-title, [data-hero] h1 * {
+  font-family: var(--font-open-sans), "Open Sans", sans-serif !important;
+}
+
+/* Unified title styling for all sections across every screen */
+.site-title, .unified-title {
+  font-family: var(--font-open-sans), "Open Sans", sans-serif !important;
+  font-size: clamp(28px, 2.8vw, 38px) !important;
+  line-height: 1.15 !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.8px !important;
 }
 
 @utility site-container {
-  width: min(100%, 1380px);
+  width: min(100%, 1320px);
   margin-inline: auto;
-  padding-inline: clamp(20px, 4vw, 80px);
+  padding-inline: clamp(14px, 2.2vw, 28px);
 
   @media (max-width: 800px) {
-    padding-inline: 24px;
+    padding-inline: 18px;
   }
 
   @media (max-width: 560px) {
-    padding-inline: 16px;
+    padding-inline: 14px;
+  }
+}
+
+.logo-white {
+  filter: brightness(0) invert(1) !important;
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
   }
 }
