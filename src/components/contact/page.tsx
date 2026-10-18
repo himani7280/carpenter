@@ -44,7 +44,7 @@ export function ContactPage() {
                 <button className={`${buttonGold} mt-3 inline-flex min-h-[48px] flex-none cursor-pointer items-center justify-center gap-5 rounded-sm border border-transparent px-5 text-[12px] font-bold uppercase transition-colors duration-180 [&_svg]:size-4.5`} type="submit">{content.submitLabel} <Icon name="arrow" /></button>
               </form>
               <div className="relative min-h-[365px] overflow-hidden rounded-[7px] max-[1100px]:col-[1/-1] max-[1100px]:min-h-[300px] max-[560px]:col-auto max-[560px]:min-h-[260px]" data-motion-effect="zoom-out">
-                <Image alt="The WoodHaus carpentry and woodworking studio" className="object-cover" fill sizes="(max-width: 800px) 100vw, 30vw" src="/images/workshop-store.webp" />
+                <Image alt="The WoodHaus carpentry and woodworking studio" className="object-cover" fill sizes="(max-width: 800px) 100vw, 30vw" src="/images/workshop-store-hd.webp" />
               </div>
             </div>
             <div className="mt-[17px] grid grid-cols-[1.2fr_1fr] gap-[17px] max-[560px]:grid-cols-1 max-[560px]:gap-3">

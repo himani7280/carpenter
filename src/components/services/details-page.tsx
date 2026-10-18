@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { carpenterServices, servicesContent } from "@/data";
+import { carpenterServices, pageContent, servicesContent } from "@/data";
 import { HighlightedTitle, PageBanner } from "@/components/common/page-elements";
 import { Icon, type IconName } from "@/components/common/icon";
 import { eyebrow, sectionSpace } from "@/components/common/styles";
@@ -17,6 +17,7 @@ export function ServiceDetailsPage({ service }: { service: ServiceType }) {
     <>
         <PageBanner
           page="services-details"
+          title={pageContent["services-details"].title}
           customBreadcrumb={{ label: service.title, parent: { href: "/services", label: "Services" } }}
         />
         <section className={sectionSpace}>
@@ -90,7 +91,7 @@ export function ServiceDetailsPage({ service }: { service: ServiceType }) {
 
             <h2 className={`${blockTitle} mt-16 max-[560px]:mt-10`} data-motion-effect="fade-up">{detail.experience.title} <em className="not-italic text-bronze">{detail.experience.highlight}</em></h2>
             <div className="mt-5 grid grid-cols-[1.05fr_0.95fr] items-center gap-8 max-[800px]:grid-cols-1">
-              <div className="relative h-[290px] overflow-hidden rounded-[10px] max-[560px]:h-[220px]" data-motion-effect="zoom-out"><Image alt={detail.experience.imageAlt} className="object-cover" fill sizes="(max-width: 800px) 100vw, 50vw" src="/images/service-carpentry.webp" /></div>
+              <div className="relative h-[290px] overflow-hidden rounded-[10px] max-[560px]:h-[220px]" data-motion-effect="zoom-out"><Image alt={detail.experience.imageAlt} className="object-cover" fill sizes="(max-width: 800px) 100vw, 50vw" src="/images/service-carpentry-hd.webp" /></div>
               <ul className="grid gap-3.5" data-motion-effect="fade-left">
                 {detail.experience.points.map(([title, text]) => (
                   <li className="flex items-start gap-3" key={title}>

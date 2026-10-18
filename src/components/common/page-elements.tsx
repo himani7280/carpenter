@@ -13,9 +13,11 @@ const parentPages: Partial<Record<Exclude<SitePageName, "home">, Exclude<SitePag
 export function PageBanner({
   page,
   customBreadcrumb,
+  title,
 }: {
   page: Exclude<SitePageName, "home">;
   customBreadcrumb?: { label: string; parent?: { href: string; label: string } };
+  title?: string;
 }) {
   const content = pageContent[page];
   const parent = parentPages[page];
@@ -28,7 +30,7 @@ export function PageBanner({
     trail.push({ href: `/${parent}`, label: pageContent[parent].breadcrumb });
   }
   const currentLabel = customBreadcrumb?.label ?? content.breadcrumb;
-  const pageTitle = customBreadcrumb?.label ?? content.title;
+  const pageTitle = title ?? (page === "services-details" || page === "blog-details" ? content.title : (customBreadcrumb?.label ?? content.title));
 
   return (
     <section className="relative grid min-h-[270px] place-items-center overflow-hidden bg-[#30251e] bg-[url('/images/carpenter-hero.jpeg')] bg-position-[center_44%] bg-cover bg-no-repeat text-center text-white before:absolute before:inset-0 before:bg-[rgb(22_17_14/76%)] max-[560px]:min-h-[200px]">

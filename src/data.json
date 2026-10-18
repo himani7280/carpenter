@@ -295,7 +295,7 @@
                 "slug": "house-renovation",
                 "title": "House Renovation",
                 "description": "Transform your home with custom carpentry solutions that add style, functionality and value.",
-                "image": "/images/service-renovation.webp",
+                "image": "/images/service-renovation-hd.webp",
                 "imageAlt": "Carpenter shaping a piece of wood in the workshop",
                 "href": "/services/house-renovation",
                 "detail": {
@@ -308,7 +308,7 @@
                     "Our renovation services cover flooring, wall panelling, ceiling work, custom built-ins and much more — all delivered on time and within budget."
                   ],
                   "imageAlt": "Carpenter shaping a piece of wood in the workshop",
-                  "image": "/images/service-renovation.webp"
+                  "image": "/images/service-renovation-hd.webp"
                 }
               },
               {
@@ -316,7 +316,7 @@
                 "slug": "furniture-remodelling",
                 "title": "Furniture Remodelling",
                 "description": "Give your old furniture a fresh new look with expert remodelling and custom designs.",
-                "image": "/images/service-furniture.webp",
+                "image": "/images/service-furniture-hd.webp",
                 "imageAlt": "Woodworker assembling custom furniture",
                 "href": "/services/furniture-remodelling",
                 "detail": {
@@ -329,7 +329,7 @@
                     "Whether it's a beloved heirloom or a worn-out wardrobe, we bring new life to your furniture and make it fit perfectly in your evolving home."
                   ],
                   "imageAlt": "Woodworker assembling custom furniture",
-                  "image": "/images/service-furniture.webp"
+                  "image": "/images/service-furniture-hd.webp"
                 }
               },
               {
@@ -337,7 +337,7 @@
                 "slug": "general-carpentry",
                 "title": "General Carpentry",
                 "description": "From custom woodwork to repairs, we deliver reliable carpentry services for every need.",
-                "image": "/images/service-carpentry.webp",
+                "image": "/images/service-carpentry-hd.webp",
                 "imageAlt": "Craftsperson sanding a solid wood tabletop",
                 "href": "/services/general-carpentry",
                 "detail": {
@@ -350,7 +350,7 @@
                     "We pride ourselves on reliability, transparency and attention to detail — ensuring that every project is completed to the highest standard and your complete satisfaction."
                   ],
                   "imageAlt": "Craftsperson sanding a solid wood tabletop",
-                  "image": "/images/service-carpentry.webp"
+                  "image": "/images/service-carpentry-hd.webp"
                 }
               },
               {
@@ -358,7 +358,7 @@
                 "slug": "custom-furniture",
                 "title": "Custom Furniture",
                 "description": "Design and create personalized furniture that perfectly fits your space and style.",
-                "image": "/images/custom-dining.webp",
+                "image": "/images/custom-dining-hd.webp",
                 "imageAlt": "Custom dining table and chairs in a modern home",
                 "href": "/services/custom-furniture",
                 "detail": {
@@ -371,7 +371,7 @@
                     "Invest in heirloom-quality furniture that brings warmth, character, and lasting beauty to your home."
                   ],
                   "imageAlt": "Custom dining table and chairs in a modern home",
-                  "image": "/images/custom-dining.webp"
+                  "image": "/images/custom-dining-hd.webp"
                 }
               },
               {
@@ -379,7 +379,7 @@
                 "slug": "kitchen-woodwork",
                 "title": "Kitchen Woodwork",
                 "description": "Upgrade your kitchen with custom cabinets, islands, and functional woodwork.",
-                "image": "/images/project-kitchen.webp",
+                "image": "/images/project-kitchen-hd.webp",
                 "imageAlt": "Beautifully crafted wooden kitchen cabinets",
                 "href": "/services/kitchen-woodwork",
                 "detail": {
@@ -392,7 +392,7 @@
                     "Let us transform your culinary space into a warm, inviting, and perfectly organized environment."
                   ],
                   "imageAlt": "Beautifully crafted wooden kitchen cabinets",
-                  "image": "/images/project-kitchen.webp"
+                  "image": "/images/project-kitchen-hd.webp"
                 }
               },
               {
@@ -400,7 +400,7 @@
                 "slug": "doors-and-windows",
                 "title": "Doors & Windows",
                 "description": "High-quality wooden doors and windows crafted for security, insulation, and elegance.",
-                "image": "/images/workshop-store.webp",
+                "image": "/images/workshop-store-hd.webp",
                 "imageAlt": "Carpenter working on a solid wooden door",
                 "href": "/services/doors-and-windows",
                 "detail": {
@@ -413,7 +413,7 @@
                     "Experience the timeless appeal and natural warmth of solid wood with our expertly crafted door and window solutions."
                   ],
                   "imageAlt": "Carpenter working on a solid wooden door",
-                  "image": "/images/workshop-store.webp"
+                  "image": "/images/workshop-store-hd.webp"
                 }
               }
             ],
@@ -466,14 +466,14 @@
                 "title": "Designed",
                 "highlight": "For Your Space",
                 "description": "From custom furniture to thoughtful interior woodwork, we make each piece fit your space, routine and personal style.",
-                "image": "/images/service-furniture.webp"
+                "image": "/images/service-furniture-hd.webp"
               },
               {
                 "eyebrow": "Made To Last",
                 "title": "Crafted With",
                 "highlight": "Lasting Care",
                 "description": "Our experienced craftspeople bring careful detail and durable materials to every repair, renovation and new project.",
-                "image": "/images/custom-dining.webp"
+                "image": "/images/custom-dining-hd.webp"
               }
             ]
           }
@@ -507,8 +507,8 @@
             "eyebrow": "Our Blog"
           },
           "CarpenterBlogDetailsBanner1": {
-            "title": "Blogs Detail",
-            "breadcrumb": "Blogs Detail",
+            "title": "Blog Details",
+            "breadcrumb": "Blog Details",
             "eyebrow": "Carpentry Tips"
           },
           "CarpenterContactBanner1": {
@@ -616,7 +616,7 @@
                 "slug": "house-renovation",
                 "title": "House Renovation",
                 "description": "Transform your home with custom carpentry solutions that add style, functionality and value.",
-                "image": "/images/service-renovation.webp",
+                "image": "/images/service-renovation-hd.webp",
                 "imageAlt": "Carpenter shaping a piece of wood in the workshop",
                 "href": "/services/house-renovation",
                 "detail": {
@@ -629,7 +629,7 @@
                     "Our renovation services cover flooring, wall panelling, ceiling work, custom built-ins and much more — all delivered on time and within budget."
                   ],
                   "imageAlt": "Carpenter shaping a piece of wood in the workshop",
-                  "image": "/images/service-renovation.webp"
+                  "image": "/images/service-renovation-hd.webp"
                 }
               },
               {
@@ -637,7 +637,7 @@
                 "slug": "furniture-remodelling",
                 "title": "Furniture Remodelling",
                 "description": "Give your old furniture a fresh new look with expert remodelling and custom designs.",
-                "image": "/images/service-furniture.webp",
+                "image": "/images/service-furniture-hd.webp",
                 "imageAlt": "Woodworker assembling custom furniture",
                 "href": "/services/furniture-remodelling",
                 "detail": {
@@ -650,7 +650,7 @@
                     "Whether it's a beloved heirloom or a worn-out wardrobe, we bring new life to your furniture and make it fit perfectly in your evolving home."
                   ],
                   "imageAlt": "Woodworker assembling custom furniture",
-                  "image": "/images/service-furniture.webp"
+                  "image": "/images/service-furniture-hd.webp"
                 }
               },
               {
@@ -658,7 +658,7 @@
                 "slug": "general-carpentry",
                 "title": "General Carpentry",
                 "description": "From custom woodwork to repairs, we deliver reliable carpentry services for every need.",
-                "image": "/images/service-carpentry.webp",
+                "image": "/images/service-carpentry-hd.webp",
                 "imageAlt": "Craftsperson sanding a solid wood tabletop",
                 "href": "/services/general-carpentry",
                 "detail": {
@@ -671,7 +671,7 @@
                     "We pride ourselves on reliability, transparency and attention to detail — ensuring that every project is completed to the highest standard and your complete satisfaction."
                   ],
                   "imageAlt": "Craftsperson sanding a solid wood tabletop",
-                  "image": "/images/service-carpentry.webp"
+                  "image": "/images/service-carpentry-hd.webp"
                 }
               },
               {
@@ -679,7 +679,7 @@
                 "slug": "custom-furniture",
                 "title": "Custom Furniture",
                 "description": "Design and create personalized furniture that perfectly fits your space and style.",
-                "image": "/images/custom-dining.webp",
+                "image": "/images/custom-dining-hd.webp",
                 "imageAlt": "Custom dining table and chairs in a modern home",
                 "href": "/services/custom-furniture",
                 "detail": {
@@ -692,7 +692,7 @@
                     "Invest in heirloom-quality furniture that brings warmth, character, and lasting beauty to your home."
                   ],
                   "imageAlt": "Custom dining table and chairs in a modern home",
-                  "image": "/images/custom-dining.webp"
+                  "image": "/images/custom-dining-hd.webp"
                 }
               },
               {
@@ -700,7 +700,7 @@
                 "slug": "kitchen-woodwork",
                 "title": "Kitchen Woodwork",
                 "description": "Upgrade your kitchen with custom cabinets, islands, and functional woodwork.",
-                "image": "/images/project-kitchen.webp",
+                "image": "/images/project-kitchen-hd.webp",
                 "imageAlt": "Beautifully crafted wooden kitchen cabinets",
                 "href": "/services/kitchen-woodwork",
                 "detail": {
@@ -713,7 +713,7 @@
                     "Let us transform your culinary space into a warm, inviting, and perfectly organized environment."
                   ],
                   "imageAlt": "Beautifully crafted wooden kitchen cabinets",
-                  "image": "/images/project-kitchen.webp"
+                  "image": "/images/project-kitchen-hd.webp"
                 }
               },
               {
@@ -721,7 +721,7 @@
                 "slug": "doors-and-windows",
                 "title": "Doors & Windows",
                 "description": "High-quality wooden doors and windows crafted for security, insulation, and elegance.",
-                "image": "/images/workshop-store.webp",
+                "image": "/images/workshop-store-hd.webp",
                 "imageAlt": "Carpenter working on a solid wooden door",
                 "href": "/services/doors-and-windows",
                 "detail": {
@@ -734,7 +734,7 @@
                     "Experience the timeless appeal and natural warmth of solid wood with our expertly crafted door and window solutions."
                   ],
                   "imageAlt": "Carpenter working on a solid wooden door",
-                  "image": "/images/workshop-store.webp"
+                  "image": "/images/workshop-store-hd.webp"
                 }
               }
             ],
@@ -760,7 +760,7 @@
                 "slug": "house-renovation",
                 "title": "House Renovation",
                 "description": "Transform your home with custom carpentry solutions that add style, functionality and value.",
-                "image": "/images/service-renovation.webp",
+                "image": "/images/service-renovation-hd.webp",
                 "imageAlt": "Carpenter shaping a piece of wood in the workshop",
                 "href": "/services/house-renovation",
                 "detail": {
@@ -773,7 +773,7 @@
                     "Our renovation services cover flooring, wall panelling, ceiling work, custom built-ins and much more — all delivered on time and within budget."
                   ],
                   "imageAlt": "Carpenter shaping a piece of wood in the workshop",
-                  "image": "/images/service-renovation.webp"
+                  "image": "/images/service-renovation-hd.webp"
                 }
               },
               {
@@ -781,7 +781,7 @@
                 "slug": "furniture-remodelling",
                 "title": "Furniture Remodelling",
                 "description": "Give your old furniture a fresh new look with expert remodelling and custom designs.",
-                "image": "/images/service-furniture.webp",
+                "image": "/images/service-furniture-hd.webp",
                 "imageAlt": "Woodworker assembling custom furniture",
                 "href": "/services/furniture-remodelling",
                 "detail": {
@@ -794,7 +794,7 @@
                     "Whether it's a beloved heirloom or a worn-out wardrobe, we bring new life to your furniture and make it fit perfectly in your evolving home."
                   ],
                   "imageAlt": "Woodworker assembling custom furniture",
-                  "image": "/images/service-furniture.webp"
+                  "image": "/images/service-furniture-hd.webp"
                 }
               },
               {
@@ -802,7 +802,7 @@
                 "slug": "general-carpentry",
                 "title": "General Carpentry",
                 "description": "From custom woodwork to repairs, we deliver reliable carpentry services for every need.",
-                "image": "/images/service-carpentry.webp",
+                "image": "/images/service-carpentry-hd.webp",
                 "imageAlt": "Craftsperson sanding a solid wood tabletop",
                 "href": "/services/general-carpentry",
                 "detail": {
@@ -815,7 +815,7 @@
                     "We pride ourselves on reliability, transparency and attention to detail — ensuring that every project is completed to the highest standard and your complete satisfaction."
                   ],
                   "imageAlt": "Craftsperson sanding a solid wood tabletop",
-                  "image": "/images/service-carpentry.webp"
+                  "image": "/images/service-carpentry-hd.webp"
                 }
               },
               {
@@ -823,7 +823,7 @@
                 "slug": "custom-furniture",
                 "title": "Custom Furniture",
                 "description": "Design and create personalized furniture that perfectly fits your space and style.",
-                "image": "/images/custom-dining.webp",
+                "image": "/images/custom-dining-hd.webp",
                 "imageAlt": "Custom dining table and chairs in a modern home",
                 "href": "/services/custom-furniture",
                 "detail": {
@@ -836,7 +836,7 @@
                     "Invest in heirloom-quality furniture that brings warmth, character, and lasting beauty to your home."
                   ],
                   "imageAlt": "Custom dining table and chairs in a modern home",
-                  "image": "/images/custom-dining.webp"
+                  "image": "/images/custom-dining-hd.webp"
                 }
               },
               {
@@ -844,7 +844,7 @@
                 "slug": "kitchen-woodwork",
                 "title": "Kitchen Woodwork",
                 "description": "Upgrade your kitchen with custom cabinets, islands, and functional woodwork.",
-                "image": "/images/project-kitchen.webp",
+                "image": "/images/project-kitchen-hd.webp",
                 "imageAlt": "Beautifully crafted wooden kitchen cabinets",
                 "href": "/services/kitchen-woodwork",
                 "detail": {
@@ -857,7 +857,7 @@
                     "Let us transform your culinary space into a warm, inviting, and perfectly organized environment."
                   ],
                   "imageAlt": "Beautifully crafted wooden kitchen cabinets",
-                  "image": "/images/project-kitchen.webp"
+                  "image": "/images/project-kitchen-hd.webp"
                 }
               },
               {
@@ -865,7 +865,7 @@
                 "slug": "doors-and-windows",
                 "title": "Doors & Windows",
                 "description": "High-quality wooden doors and windows crafted for security, insulation, and elegance.",
-                "image": "/images/workshop-store.webp",
+                "image": "/images/workshop-store-hd.webp",
                 "imageAlt": "Carpenter working on a solid wooden door",
                 "href": "/services/doors-and-windows",
                 "detail": {
@@ -878,7 +878,7 @@
                     "Experience the timeless appeal and natural warmth of solid wood with our expertly crafted door and window solutions."
                   ],
                   "imageAlt": "Carpenter working on a solid wooden door",
-                  "image": "/images/workshop-store.webp"
+                  "image": "/images/workshop-store-hd.webp"
                 }
               }
             ]
@@ -931,21 +931,42 @@
                 "quote": "Excellent craftsmanship and attention to detail. The team understood our requirements perfectly and delivered beyond our expectations. Highly recommended!",
                 "author": "Rohit Mehta",
                 "role": "Homeowner",
-                "image": "/images/testimonial-rohit.jpg",
+                "image": "/images/testimonial-1-hd.png",
                 "rating": 5
               },
               {
                 "quote": "They transformed our office space with custom wooden work that looks amazing. Professional team, timely delivery and great quality. Truly a reliable service!",
                 "author": "Priya Sharma",
                 "role": "Business Owner",
-                "image": "/images/testimonial-priya.jpg",
+                "image": "/images/testimonial-2-hd.png",
                 "rating": 5
               },
               {
                 "quote": "Very professional and skilled team. The finishing and quality of work are top-notch. They completed the project on time and within budget. Will definitely work with them again.",
                 "author": "Amit Verma",
                 "role": "Interior Designer",
-                "image": "/images/testimonial-amit.jpg",
+                "image": "/images/testimonial-3-hd.png",
+                "rating": 5
+              },
+              {
+                "quote": "WoodHaus built custom walk-in wardrobes and an open-tread timber staircase for our new villa. The joinery precision and wood finishes are absolutely stunning!",
+                "author": "Neha Kapoor",
+                "role": "Villa Owner",
+                "image": "/images/testimonial-4-hd.png",
+                "rating": 5
+              },
+              {
+                "quote": "As an architect, I am very particular about millimeter tolerances and timber grades. The WoodHaus carpentry team delivered exceptional quality on time and with true professionalism.",
+                "author": "Vikram Singhania",
+                "role": "Architect & Builder",
+                "image": "/images/testimonial-5-hd.png",
+                "rating": 5
+              },
+              {
+                "quote": "Our cafe interior required bespoke rustic oak tables, custom counters, and wall panelling. Their team executed the design flawlessly. Our customers always compliment the woodwork!",
+                "author": "Ananya Joshi",
+                "role": "Cafe & Studio Owner",
+                "image": "/images/testimonial-6-hd.png",
                 "rating": 5
               }
             ]
@@ -965,57 +986,57 @@
               {
                 "title": "Made for Gatherings",
                 "category": "Dining Room",
-                "image": "/images/project-dining.webp"
+                "image": "/images/project-dining-hd.webp"
               },
               {
                 "title": "A Place for Everything",
                 "category": "Fitted Wardrobe",
-                "image": "/images/project-wardrobe.webp"
+                "image": "/images/project-wardrobe-hd.webp"
               },
               {
                 "title": "The Heart of the Home",
                 "category": "Custom Kitchen",
-                "image": "/images/project-kitchen.webp"
+                "image": "/images/project-kitchen-hd.webp"
               },
               {
                 "title": "A Better Start to Every Day",
                 "category": "Bedroom Furniture",
-                "image": "/images/project-bedroom.webp"
+                "image": "/images/project-bedroom-hd.webp"
               },
               {
                 "title": "Room to Unwind",
                 "category": "Living Room",
-                "image": "/images/project-living.webp"
+                "image": "/images/project-living-hd.webp"
               },
               {
                 "title": "A Step Above",
                 "category": "Staircase",
-                "image": "/images/project-stairs.webp"
+                "image": "/images/project-stairs-hd.webp"
               },
               {
                 "title": "Everyday Retreat",
                 "category": "Bathroom Vanity",
-                "image": "/images/project-bathroom.webp"
+                "image": "/images/project-bathroom-hd.webp"
               },
               {
                 "title": "Work, Well Organised",
                 "category": "Home Office",
-                "image": "/images/project-living.webp"
+                "image": "/images/project-living-hd.webp"
               },
               {
                 "title": "Outdoor Living",
                 "category": "Patio Woodwork",
-                "image": "/images/project-kitchen.webp"
+                "image": "/images/project-kitchen-hd.webp"
               },
               {
                 "title": "Details That Welcome",
                 "category": "Entryway",
-                "image": "/images/project-wardrobe.webp"
+                "image": "/images/project-wardrobe-hd.webp"
               },
               {
                 "title": "Storage That Works",
                 "category": "Kitchen Drawers",
-                "image": "/images/project-kitchen.webp"
+                "image": "/images/project-kitchen-hd.webp"
               }
             ]
           }
@@ -1109,7 +1130,7 @@
                 "category": "Carpentry Tips",
                 "title": "Eco-Smart Carpentry: How Nature Inspires Design",
                 "excerpt": "Crafted with precision and passion, our expert carpenters turn wood into beautiful, functional spaces.",
-                "image": "/images/service-renovation.webp",
+                "image": "/images/blog-eco-smart-hd.webp",
                 "date": "April 24, 2026"
               },
               {
@@ -1120,7 +1141,7 @@
                 "category": "Home Improvement",
                 "title": "5 Elegant Wooden Furniture Must-Haves for Every Home",
                 "excerpt": "Discover the furniture pieces that bring warmth, balance and lasting character to your home.",
-                "image": "/images/service-furniture.webp",
+                "image": "/images/blog-furniture-must-haves-hd.webp",
                 "date": "April 20, 2026"
               },
               {
@@ -1131,7 +1152,7 @@
                 "category": "Woodworking Guide",
                 "title": "The Craft of Custom Woodwork: Why Handmade Counts",
                 "excerpt": "A closer look at the care, patience and skill behind truly personal woodwork.",
-                "image": "/images/service-carpentry.webp",
+                "image": "/images/blog-custom-woodwork-hd.webp",
                 "date": "April 16, 2026"
               },
               {
@@ -1142,7 +1163,7 @@
                 "category": "Interior Design",
                 "title": "Wooden Interior Trends for Modern Homes in 2026",
                 "excerpt": "Natural materials and thoughtful details make a home feel calm, considered and welcoming.",
-                "image": "/images/project-bedroom.webp",
+                "image": "/images/blog-interior-trends-hd.webp",
                 "date": "April 12, 2026"
               },
               {
@@ -1153,7 +1174,7 @@
                 "category": "Furniture Care",
                 "title": "How to Maintain Your Wooden Furniture for Years",
                 "excerpt": "Simple, regular care helps your favourite timber pieces age beautifully.",
-                "image": "/images/project-living.webp",
+                "image": "/images/blog-maintain-furniture-hd.webp",
                 "date": "April 8, 2026"
               },
               {
@@ -1164,7 +1185,7 @@
                 "category": "Storage Ideas",
                 "title": "Clever Storage That Makes the Most of Your Space",
                 "excerpt": "Beautiful built-ins turn unused corners into useful, well-organised spaces.",
-                "image": "/images/project-wardrobe.webp",
+                "image": "/images/blog-clever-storage-hd.webp",
                 "date": "April 4, 2026"
               }
             ]
@@ -1183,7 +1204,7 @@
                 "category": "Carpentry Tips",
                 "title": "Eco-Smart Carpentry: How Nature Inspires Design",
                 "excerpt": "Crafted with precision and passion, our expert carpenters turn wood into beautiful, functional spaces.",
-                "image": "/images/service-renovation.webp",
+                "image": "/images/service-renovation-hd.webp",
                 "date": "April 24, 2026"
               },
               {
@@ -1194,7 +1215,7 @@
                 "category": "Home Improvement",
                 "title": "5 Elegant Wooden Furniture Must-Haves for Every Home",
                 "excerpt": "Discover the furniture pieces that bring warmth, balance and lasting character to your home.",
-                "image": "/images/service-furniture.webp",
+                "image": "/images/service-furniture-hd.webp",
                 "date": "April 20, 2026"
               },
               {
@@ -1205,7 +1226,7 @@
                 "category": "Woodworking Guide",
                 "title": "The Craft of Custom Woodwork: Why Handmade Counts",
                 "excerpt": "A closer look at the care, patience and skill behind truly personal woodwork.",
-                "image": "/images/service-carpentry.webp",
+                "image": "/images/service-carpentry-hd.webp",
                 "date": "April 16, 2026"
               },
               {
@@ -1216,7 +1237,7 @@
                 "category": "Interior Design",
                 "title": "Wooden Interior Trends for Modern Homes in 2026",
                 "excerpt": "Natural materials and thoughtful details make a home feel calm, considered and welcoming.",
-                "image": "/images/project-bedroom.webp",
+                "image": "/images/project-bedroom-hd.webp",
                 "date": "April 12, 2026"
               },
               {
@@ -1227,7 +1248,7 @@
                 "category": "Furniture Care",
                 "title": "How to Maintain Your Wooden Furniture for Years",
                 "excerpt": "Simple, regular care helps your favourite timber pieces age beautifully.",
-                "image": "/images/project-living.webp",
+                "image": "/images/project-living-hd.webp",
                 "date": "April 8, 2026"
               },
               {
@@ -1238,7 +1259,7 @@
                 "category": "Storage Ideas",
                 "title": "Clever Storage That Makes the Most of Your Space",
                 "excerpt": "Beautiful built-ins turn unused corners into useful, well-organised spaces.",
-                "image": "/images/project-wardrobe.webp",
+                "image": "/images/project-wardrobe-hd.webp",
                 "date": "April 4, 2026"
               }
             ]
@@ -1361,7 +1382,7 @@
                 "slug": "house-renovation",
                 "title": "House Renovation",
                 "description": "Transform your home with custom carpentry solutions that add style, functionality and value.",
-                "image": "/images/service-renovation.webp",
+                "image": "/images/service-renovation-hd.webp",
                 "imageAlt": "Carpenter shaping a piece of wood in the workshop",
                 "href": "/services/house-renovation",
                 "detail": {
@@ -1374,7 +1395,7 @@
                     "Our renovation services cover flooring, wall panelling, ceiling work, custom built-ins and much more — all delivered on time and within budget."
                   ],
                   "imageAlt": "Carpenter shaping a piece of wood in the workshop",
-                  "image": "/images/service-renovation.webp"
+                  "image": "/images/service-renovation-hd.webp"
                 }
               },
               {
@@ -1382,7 +1403,7 @@
                 "slug": "furniture-remodelling",
                 "title": "Furniture Remodelling",
                 "description": "Give your old furniture a fresh new look with expert remodelling and custom designs.",
-                "image": "/images/service-furniture.webp",
+                "image": "/images/service-furniture-hd.webp",
                 "imageAlt": "Woodworker assembling custom furniture",
                 "href": "/services/furniture-remodelling",
                 "detail": {
@@ -1395,7 +1416,7 @@
                     "Whether it's a beloved heirloom or a worn-out wardrobe, we bring new life to your furniture and make it fit perfectly in your evolving home."
                   ],
                   "imageAlt": "Woodworker assembling custom furniture",
-                  "image": "/images/service-furniture.webp"
+                  "image": "/images/service-furniture-hd.webp"
                 }
               },
               {
@@ -1403,7 +1424,7 @@
                 "slug": "general-carpentry",
                 "title": "General Carpentry",
                 "description": "From custom woodwork to repairs, we deliver reliable carpentry services for every need.",
-                "image": "/images/service-carpentry.webp",
+                "image": "/images/service-carpentry-hd.webp",
                 "imageAlt": "Craftsperson sanding a solid wood tabletop",
                 "href": "/services/general-carpentry",
                 "detail": {
@@ -1416,7 +1437,7 @@
                     "We pride ourselves on reliability, transparency and attention to detail — ensuring that every project is completed to the highest standard and your complete satisfaction."
                   ],
                   "imageAlt": "Craftsperson sanding a solid wood tabletop",
-                  "image": "/images/service-carpentry.webp"
+                  "image": "/images/service-carpentry-hd.webp"
                 }
               },
               {
@@ -1424,7 +1445,7 @@
                 "slug": "custom-furniture",
                 "title": "Custom Furniture",
                 "description": "Design and create personalized furniture that perfectly fits your space and style.",
-                "image": "/images/custom-dining.webp",
+                "image": "/images/custom-dining-hd.webp",
                 "imageAlt": "Custom dining table and chairs in a modern home",
                 "href": "/services/custom-furniture",
                 "detail": {
@@ -1437,7 +1458,7 @@
                     "Invest in heirloom-quality furniture that brings warmth, character, and lasting beauty to your home."
                   ],
                   "imageAlt": "Custom dining table and chairs in a modern home",
-                  "image": "/images/custom-dining.webp"
+                  "image": "/images/custom-dining-hd.webp"
                 }
               },
               {
@@ -1445,7 +1466,7 @@
                 "slug": "kitchen-woodwork",
                 "title": "Kitchen Woodwork",
                 "description": "Upgrade your kitchen with custom cabinets, islands, and functional woodwork.",
-                "image": "/images/project-kitchen.webp",
+                "image": "/images/project-kitchen-hd.webp",
                 "imageAlt": "Beautifully crafted wooden kitchen cabinets",
                 "href": "/services/kitchen-woodwork",
                 "detail": {
@@ -1458,7 +1479,7 @@
                     "Let us transform your culinary space into a warm, inviting, and perfectly organized environment."
                   ],
                   "imageAlt": "Beautifully crafted wooden kitchen cabinets",
-                  "image": "/images/project-kitchen.webp"
+                  "image": "/images/project-kitchen-hd.webp"
                 }
               },
               {
@@ -1466,7 +1487,7 @@
                 "slug": "doors-and-windows",
                 "title": "Doors & Windows",
                 "description": "High-quality wooden doors and windows crafted for security, insulation, and elegance.",
-                "image": "/images/workshop-store.webp",
+                "image": "/images/workshop-store-hd.webp",
                 "imageAlt": "Carpenter working on a solid wooden door",
                 "href": "/services/doors-and-windows",
                 "detail": {
@@ -1479,7 +1500,7 @@
                     "Experience the timeless appeal and natural warmth of solid wood with our expertly crafted door and window solutions."
                   ],
                   "imageAlt": "Carpenter working on a solid wooden door",
-                  "image": "/images/workshop-store.webp"
+                  "image": "/images/workshop-store-hd.webp"
                 }
               }
             ]
@@ -1632,8 +1653,8 @@
       "eyebrow": "Our Blog"
     },
     "blog-details": {
-      "title": "Blogs Detail",
-      "breadcrumb": "Blogs Detail",
+      "title": "Blog Details",
+      "breadcrumb": "Blog Details",
       "eyebrow": "Carpentry Tips"
     },
     "contact": {
@@ -1828,14 +1849,14 @@
           "title": "Designed",
           "highlight": "For Your Space",
           "description": "From custom furniture to thoughtful interior woodwork, we make each piece fit your space, routine and personal style.",
-          "image": "/images/service-furniture.webp"
+          "image": "/images/service-furniture-hd.webp"
         },
         {
           "eyebrow": "Made To Last",
           "title": "Crafted With",
           "highlight": "Lasting Care",
           "description": "Our experienced craftspeople bring careful detail and durable materials to every repair, renovation and new project.",
-          "image": "/images/custom-dining.webp"
+          "image": "/images/custom-dining-hd.webp"
         }
       ]
     },
@@ -1874,21 +1895,42 @@
         "quote": "Excellent craftsmanship and attention to detail. The team understood our requirements perfectly and delivered beyond our expectations. Highly recommended!",
         "author": "Rohit Mehta",
         "role": "Homeowner",
-        "image": "/images/testimonial-rohit.jpg",
+        "image": "/images/testimonial-1-hd.png",
         "rating": 5
       },
       {
         "quote": "They transformed our office space with custom wooden work that looks amazing. Professional team, timely delivery and great quality. Truly a reliable service!",
         "author": "Priya Sharma",
         "role": "Business Owner",
-        "image": "/images/testimonial-priya.jpg",
+        "image": "/images/testimonial-2-hd.png",
         "rating": 5
       },
       {
         "quote": "Very professional and skilled team. The finishing and quality of work are top-notch. They completed the project on time and within budget. Will definitely work with them again.",
         "author": "Amit Verma",
         "role": "Interior Designer",
-        "image": "/images/testimonial-amit.jpg",
+        "image": "/images/testimonial-3-hd.png",
+        "rating": 5
+      },
+      {
+        "quote": "WoodHaus built custom walk-in wardrobes and an open-tread timber staircase for our new villa. The joinery precision and wood finishes are absolutely stunning!",
+        "author": "Neha Kapoor",
+        "role": "Villa Owner",
+        "image": "/images/testimonial-4-hd.png",
+        "rating": 5
+      },
+      {
+        "quote": "As an architect, I am very particular about millimeter tolerances and timber grades. The WoodHaus carpentry team delivered exceptional quality on time and with true professionalism.",
+        "author": "Vikram Singhania",
+        "role": "Architect & Builder",
+        "image": "/images/testimonial-5-hd.png",
+        "rating": 5
+      },
+      {
+        "quote": "Our cafe interior required bespoke rustic oak tables, custom counters, and wall panelling. Their team executed the design flawlessly. Our customers always compliment the woodwork!",
+        "author": "Ananya Joshi",
+        "role": "Cafe & Studio Owner",
+        "image": "/images/testimonial-6-hd.png",
         "rating": 5
       }
     ],
@@ -1982,22 +2024,22 @@
         [
           "Dining Tables",
           "Elegant and durable dining solutions for modern homes.",
-          "/images/project-dining.webp"
+          "/images/project-dining-hd.webp"
         ],
         [
           "Wardrobes",
           "Stylish and functional storage designed for your space.",
-          "/images/project-wardrobe.webp"
+          "/images/project-wardrobe-hd.webp"
         ],
         [
           "TV Units",
           "Modern and space-saving designs for living rooms.",
-          "/images/project-living.webp"
+          "/images/project-living-hd.webp"
         ],
         [
           "Beds",
           "Comfortable and stylish beds built for lasting quality.",
-          "/images/project-bedroom.webp"
+          "/images/project-bedroom-hd.webp"
         ]
       ],
       "process": {
@@ -2138,7 +2180,7 @@
       "slug": "house-renovation",
       "title": "House Renovation",
       "description": "Transform your home with custom carpentry solutions that add style, functionality and value.",
-      "image": "/images/service-renovation.webp",
+      "image": "/images/service-renovation-hd.webp",
       "imageAlt": "Carpenter shaping a piece of wood in the workshop",
       "href": "/services/house-renovation",
       "detail": {
@@ -2151,7 +2193,7 @@
           "Our renovation services cover flooring, wall panelling, ceiling work, custom built-ins and much more — all delivered on time and within budget."
         ],
         "imageAlt": "Carpenter shaping a piece of wood in the workshop",
-        "image": "/images/service-renovation.webp"
+        "image": "/images/service-renovation-hd.webp"
       }
     },
     {
@@ -2159,7 +2201,7 @@
       "slug": "furniture-remodelling",
       "title": "Furniture Remodelling",
       "description": "Give your old furniture a fresh new look with expert remodelling and custom designs.",
-      "image": "/images/service-furniture.webp",
+      "image": "/images/service-furniture-hd.webp",
       "imageAlt": "Woodworker assembling custom furniture",
       "href": "/services/furniture-remodelling",
       "detail": {
@@ -2172,7 +2214,7 @@
           "Whether it's a beloved heirloom or a worn-out wardrobe, we bring new life to your furniture and make it fit perfectly in your evolving home."
         ],
         "imageAlt": "Woodworker assembling custom furniture",
-        "image": "/images/service-furniture.webp"
+        "image": "/images/service-furniture-hd.webp"
       }
     },
     {
@@ -2180,7 +2222,7 @@
       "slug": "general-carpentry",
       "title": "General Carpentry",
       "description": "From custom woodwork to repairs, we deliver reliable carpentry services for every need.",
-      "image": "/images/service-carpentry.webp",
+      "image": "/images/service-carpentry-hd.webp",
       "imageAlt": "Craftsperson sanding a solid wood tabletop",
       "href": "/services/general-carpentry",
       "detail": {
@@ -2193,7 +2235,7 @@
           "We pride ourselves on reliability, transparency and attention to detail — ensuring that every project is completed to the highest standard and your complete satisfaction."
         ],
         "imageAlt": "Craftsperson sanding a solid wood tabletop",
-        "image": "/images/service-carpentry.webp"
+        "image": "/images/service-carpentry-hd.webp"
       }
     },
     {
@@ -2201,7 +2243,7 @@
       "slug": "custom-furniture",
       "title": "Custom Furniture",
       "description": "Design and create personalized furniture that perfectly fits your space and style.",
-      "image": "/images/custom-dining.webp",
+      "image": "/images/custom-dining-hd.webp",
       "imageAlt": "Custom dining table and chairs in a modern home",
       "href": "/services/custom-furniture",
       "detail": {
@@ -2214,7 +2256,7 @@
           "Invest in heirloom-quality furniture that brings warmth, character, and lasting beauty to your home."
         ],
         "imageAlt": "Custom dining table and chairs in a modern home",
-        "image": "/images/custom-dining.webp"
+        "image": "/images/custom-dining-hd.webp"
       }
     },
     {
@@ -2222,7 +2264,7 @@
       "slug": "kitchen-woodwork",
       "title": "Kitchen Woodwork",
       "description": "Upgrade your kitchen with custom cabinets, islands, and functional woodwork.",
-      "image": "/images/project-kitchen.webp",
+      "image": "/images/project-kitchen-hd.webp",
       "imageAlt": "Beautifully crafted wooden kitchen cabinets",
       "href": "/services/kitchen-woodwork",
       "detail": {
@@ -2235,7 +2277,7 @@
           "Let us transform your culinary space into a warm, inviting, and perfectly organized environment."
         ],
         "imageAlt": "Beautifully crafted wooden kitchen cabinets",
-        "image": "/images/project-kitchen.webp"
+        "image": "/images/project-kitchen-hd.webp"
       }
     },
     {
@@ -2243,7 +2285,7 @@
       "slug": "doors-and-windows",
       "title": "Doors & Windows",
       "description": "High-quality wooden doors and windows crafted for security, insulation, and elegance.",
-      "image": "/images/workshop-store.webp",
+      "image": "/images/workshop-store-hd.webp",
       "imageAlt": "Carpenter working on a solid wooden door",
       "href": "/services/doors-and-windows",
       "detail": {
@@ -2256,7 +2298,7 @@
           "Experience the timeless appeal and natural warmth of solid wood with our expertly crafted door and window solutions."
         ],
         "imageAlt": "Carpenter working on a solid wooden door",
-        "image": "/images/workshop-store.webp"
+        "image": "/images/workshop-store-hd.webp"
       }
     }
   ],
@@ -2274,57 +2316,57 @@
     {
       "title": "Made for Gatherings",
       "category": "Dining Room",
-      "image": "/images/project-dining.webp"
+      "image": "/images/project-dining-hd.webp"
     },
     {
       "title": "A Place for Everything",
       "category": "Fitted Wardrobe",
-      "image": "/images/project-wardrobe.webp"
+      "image": "/images/project-wardrobe-hd.webp"
     },
     {
       "title": "The Heart of the Home",
       "category": "Custom Kitchen",
-      "image": "/images/project-kitchen.webp"
+      "image": "/images/project-kitchen-hd.webp"
     },
     {
       "title": "A Better Start to Every Day",
       "category": "Bedroom Furniture",
-      "image": "/images/project-bedroom.webp"
+      "image": "/images/project-bedroom-hd.webp"
     },
     {
       "title": "Room to Unwind",
       "category": "Living Room",
-      "image": "/images/project-living.webp"
+      "image": "/images/project-living-hd.webp"
     },
     {
       "title": "A Step Above",
       "category": "Staircase",
-      "image": "/images/project-stairs.webp"
+      "image": "/images/project-stairs-hd.webp"
     },
     {
       "title": "Everyday Retreat",
       "category": "Bathroom Vanity",
-      "image": "/images/project-bathroom.webp"
+      "image": "/images/project-bathroom-hd.webp"
     },
     {
       "title": "Work, Well Organised",
       "category": "Home Office",
-      "image": "/images/project-living.webp"
+      "image": "/images/project-living-hd.webp"
     },
     {
       "title": "Outdoor Living",
       "category": "Patio Woodwork",
-      "image": "/images/project-kitchen.webp"
+      "image": "/images/project-kitchen-hd.webp"
     },
     {
       "title": "Details That Welcome",
       "category": "Entryway",
-      "image": "/images/project-wardrobe.webp"
+      "image": "/images/project-wardrobe-hd.webp"
     },
     {
       "title": "Storage That Works",
       "category": "Kitchen Drawers",
-      "image": "/images/project-kitchen.webp"
+      "image": "/images/project-kitchen-hd.webp"
     }
   ],
   "blogPosts": [
@@ -2336,7 +2378,7 @@
       "category": "Carpentry Tips",
       "title": "Eco-Smart Carpentry: How Nature Inspires Design",
       "excerpt": "Crafted with precision and passion, our expert carpenters turn wood into beautiful, functional spaces.",
-      "image": "/images/service-renovation.webp",
+      "image": "/images/blog-eco-smart-hd.webp",
       "date": "April 24, 2026"
     },
     {
@@ -2347,7 +2389,7 @@
       "category": "Home Improvement",
       "title": "5 Elegant Wooden Furniture Must-Haves for Every Home",
       "excerpt": "Discover the furniture pieces that bring warmth, balance and lasting character to your home.",
-      "image": "/images/service-furniture.webp",
+      "image": "/images/blog-furniture-must-haves-hd.webp",
       "date": "April 20, 2026"
     },
     {
@@ -2358,7 +2400,7 @@
       "category": "Woodworking Guide",
       "title": "The Craft of Custom Woodwork: Why Handmade Counts",
       "excerpt": "A closer look at the care, patience and skill behind truly personal woodwork.",
-      "image": "/images/service-carpentry.webp",
+      "image": "/images/blog-custom-woodwork-hd.webp",
       "date": "April 16, 2026"
     },
     {
@@ -2369,7 +2411,7 @@
       "category": "Interior Design",
       "title": "Wooden Interior Trends for Modern Homes in 2026",
       "excerpt": "Natural materials and thoughtful details make a home feel calm, considered and welcoming.",
-      "image": "/images/project-bedroom.webp",
+      "image": "/images/blog-interior-trends-hd.webp",
       "date": "April 12, 2026"
     },
     {
@@ -2380,7 +2422,7 @@
       "category": "Furniture Care",
       "title": "How to Maintain Your Wooden Furniture for Years",
       "excerpt": "Simple, regular care helps your favourite timber pieces age beautifully.",
-      "image": "/images/project-living.webp",
+      "image": "/images/blog-maintain-furniture-hd.webp",
       "date": "April 8, 2026"
     },
     {
@@ -2391,7 +2433,7 @@
       "category": "Storage Ideas",
       "title": "Clever Storage That Makes the Most of Your Space",
       "excerpt": "Beautiful built-ins turn unused corners into useful, well-organised spaces.",
-      "image": "/images/project-wardrobe.webp",
+      "image": "/images/blog-clever-storage-hd.webp",
       "date": "April 4, 2026"
     }
   ],
