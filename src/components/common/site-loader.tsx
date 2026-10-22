@@ -7,9 +7,9 @@ export function SiteLoader() {
   const [hidden, setHidden] = useState(false);
 
   useEffect(() => {
-    // Dismiss loader once page is fully loaded or after a brief safety timer
+    
     const handleLoad = () => {
-      // Small timeout to ensure fonts and critical assets have rendered smoothly
+      
       const timer = setTimeout(() => {
         setLoading(false);
       }, 350);
@@ -20,7 +20,7 @@ export function SiteLoader() {
       handleLoad();
     } else {
       window.addEventListener("load", handleLoad);
-      // Failsafe timer (max 2.5s) so loader never blocks the user
+    
       const failsafe = setTimeout(() => {
         setLoading(false);
       }, 2500);

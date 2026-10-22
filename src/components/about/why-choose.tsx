@@ -29,10 +29,10 @@ export function WhyChoose() {
           <span aria-hidden="true" className="absolute -top-2 -left-3 h-[62%] w-8 rounded-[10px] bg-accent [clip-path:polygon(0_8%,100%_0,100%_100%,0_92%)]" />
           <span aria-hidden="true" className="absolute right-0 bottom-[22%] h-[44%] w-7 translate-x-3 rounded-[10px] bg-accent [clip-path:polygon(0_0,100%_10%,100%_90%,0_100%)] max-[800px]:translate-x-2" />
           <div className="relative grid grid-cols-[1.75fr_1fr] gap-3">
-            <div className="relative h-[360px] overflow-hidden rounded-xl max-[560px]:h-[270px]"><Image alt="Smiling WoodHaus carpenter in a workshop" className="object-cover" fill sizes="(max-width: 800px) 60vw, 30vw" src="/images/why-main-hd.jpg" /></div>
+            <div className="relative h-[360px] overflow-hidden rounded-xl max-[560px]:h-[270px]"><Image alt="Smiling WoodHaus carpenter in a workshop" className="object-cover" fill sizes="(max-width: 800px) 60vw, 30vw" src="/images/why-main-hd.webp" /></div>
             <div className="grid grid-rows-[0.82fr_1fr] gap-3">
-              <div className="relative overflow-hidden rounded-xl"><Image alt="Carpenter planing a timber board" className="object-cover" fill sizes="(max-width: 800px) 35vw, 18vw" src="/images/why-top-hd.jpg" /></div>
-              <div className="relative overflow-hidden rounded-xl"><Image alt="Carpenter marking a timber board with a pencil" className="object-cover" fill sizes="(max-width: 800px) 35vw, 18vw" src="/images/why-bottom-hd.jpg" /></div>
+              <div className="relative overflow-hidden rounded-xl"><Image alt="Carpenter planing a timber board" className="object-cover" fill sizes="(max-width: 800px) 35vw, 18vw" src="/images/why-top-hd.webp" /></div>
+              <div className="relative overflow-hidden rounded-xl"><Image alt="Carpenter marking a timber board with a pencil" className="object-cover" fill sizes="(max-width: 800px) 35vw, 18vw" src="/images/why-bottom-hd.webp" /></div>
             </div>
           </div>
           <div className="relative mt-3 flex items-center gap-5 rounded-xl bg-[linear-gradient(110deg,#9a5b28,#c48748)] px-6 py-4 text-white max-[560px]:gap-3 max-[560px]:px-4">

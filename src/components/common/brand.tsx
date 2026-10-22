@@ -15,7 +15,7 @@ export function Brand({
         alt={`${siteCopy.brand.name} ${siteCopy.brand.descriptor}`}
         className={imageClassName}
         height={107}
-        src={variant === "white" ? "/images/woodhaus-logo-light.png" : "/images/woodhaus-logo.png"}
+        src={variant === "white" ? "/images/woodhaus-logo-light.webp" : "/images/woodhaus-logo.webp"}
         width={320}
       />
     </Link>

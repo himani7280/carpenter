@@ -26,7 +26,7 @@ export function SiteFooter() {
 
   return (
     <footer className="bg-[#0d0c0b] text-white">
-      <div className="bg-[#130e0a] bg-[image:linear-gradient(#130e0a,rgb(19_14_10/0)_42%),url('/images/footer-top.jpg'),url('/images/footer-bottom.jpg')] bg-[length:100%_7.86vw,100%_auto,100%_auto] bg-position-[center_bottom,center_top,center_bottom] bg-no-repeat py-[clamp(65px,6.8vw,90px)] max-[560px]:py-[56px]">
+      <div className="bg-[#130e0a] bg-[image:linear-gradient(#130e0a,rgb(19_14_10/0)_42%),url('/images/footer-top.webp'),url('/images/footer-bottom.webp')] bg-[length:100%_7.86vw,100%_auto,100%_auto] bg-position-[center_bottom,center_top,center_bottom] bg-no-repeat py-[clamp(65px,6.8vw,90px)] max-[560px]:py-[56px]">
 
         {/* Responsive Grid Layout */}
         <div className="site-container grid grid-cols-4 gap-8 max-[1100px]:grid-cols-2 max-[767px]:grid-cols-1 max-[560px]:gap-y-8">

@@ -104,7 +104,7 @@ export function BlogDetailsPage({ post }: { post: BlogPost }) {
                 ))}
               </div>
 
-              <div className="relative overflow-hidden rounded-[7px] bg-[#2b1e16] bg-[url('/images/carpenter-hero.jpeg')] bg-position-[center_40%] bg-cover p-7 py-8 text-white before:absolute before:inset-0 before:bg-[rgb(31_21_15/78%)] max-[800px]:col-span-full">
+              <div className="relative overflow-hidden rounded-[7px] bg-[#2b1e16] bg-[url('/images/carpenter-hero.webp')] bg-position-[center_40%] bg-cover p-7 py-8 text-white before:absolute before:inset-0 before:bg-[rgb(31_21_15/78%)] max-[800px]:col-span-full">
                 <div className="relative">
                   <span className="grid size-14 place-items-center rounded-full bg-accent text-white outline-1 outline-offset-4 outline-accent/50 [&_svg]:size-7"><Icon name="headset" /></span>
                   <h2 className="font-heading mt-3.5 text-[22px] font-bold">{article.help.title}</h2>

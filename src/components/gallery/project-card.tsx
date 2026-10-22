@@ -4,9 +4,9 @@ import { Icon } from "@/components/common/icon";
 import { roundArrow } from "@/components/common/styles";
 
 export function ProjectCard({ project, index, total, onClick }: { project: (typeof projectGallery)[number]; index: number; total: number; onClick: () => void }) {
-  // Tablet/desktop rows are 3 + 4 + 4 cards (12-column grid: 4 columns each for the first three, 3 for the rest).
+  
   const rowSpan = index < 3 ? "min-[561px]:col-span-4" : "min-[561px]:col-span-3";
-  // On phones the grid becomes a mosaic: every third card (and a lone last one) is a tall full-width feature, the rest sit in pairs.
+  
   const feature = index % 3 === 0 || (index === total - 1 && index % 3 === 1);
   const mosaic = feature ? "max-[560px]:col-span-2 max-[560px]:row-span-3" : "max-[560px]:row-span-2";
 

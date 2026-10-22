@@ -12,7 +12,7 @@ export function ProjectGrid() {
   const [rowsToShow, setRowsToShow] = useState(2);
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 
-  // 2 rows = 7 items. 3 rows = 11 items.
+ 
   const itemsToShow = rowsToShow === 2 ? 7 : 11;
   const visibleProjects = projectGallery.slice(0, itemsToShow);
 

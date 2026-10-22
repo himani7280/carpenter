@@ -4,7 +4,7 @@ import Link from "next/link";
 import { pageContent, type SitePageName } from "@/data";
 import { aboutPhoto, aboutPhotoWrap, experienceBadge } from "@/components/common/styles";
 
-// Detail pages show their listing page in the breadcrumb: Home › Services › Services Details.
+// Detail pages show their listing page in the breadcrumb
 const parentPages: Partial<Record<Exclude<SitePageName, "home">, Exclude<SitePageName, "home">>> = {
   "services-details": "services",
   "blog-details": "blog",
@@ -33,7 +33,7 @@ export function PageBanner({
   const pageTitle = title ?? (page === "services-details" || page === "blog-details" ? content.title : (customBreadcrumb?.label ?? content.title));
 
   return (
-    <section className="relative grid min-h-[270px] place-items-center overflow-hidden bg-[#30251e] bg-[url('/images/carpenter-hero.jpeg')] bg-position-[center_44%] bg-cover bg-no-repeat text-center text-white before:absolute before:inset-0 before:bg-[rgb(22_17_14/76%)] max-[560px]:min-h-[200px]">
+    <section className="relative grid min-h-[270px] place-items-center overflow-hidden bg-[#30251e] bg-[url('/images/carpenter-hero.webp')] bg-position-[center_44%] bg-cover bg-no-repeat text-center text-white before:absolute before:inset-0 before:bg-[rgb(22_17_14/76%)] max-[560px]:min-h-[200px]">
       <div className="site-container relative z-1 py-10 max-[560px]:py-7">
         <h1 className="mb-3 font-heading text-[clamp(28px,3.2vw,40px)] font-bold tracking-[-1px] max-[560px]:mb-2" data-motion-effect="fade-down">{pageTitle}</h1>
         <nav aria-label="Breadcrumb" className="flex justify-center gap-[11px] text-[13.5px] text-white max-[560px]:text-[12px]" data-motion-flip="up">
@@ -67,7 +67,7 @@ export function HighlightedTitle({ first, highlight, breakBeforeHighlight = fals
 export function AboutPhoto({ alt }: { alt: string }) {
   return (
     <div className={aboutPhotoWrap} data-motion-effect="zoom-out">
-      <Image alt={alt} className={aboutPhoto} fill sizes="(max-width: 800px) 100vw, 50vw" src="/images/carpenter-hero.jpeg" />
+      <Image alt={alt} className={aboutPhoto} fill sizes="(max-width: 800px) 100vw, 50vw" src="/images/carpenter-hero.webp" />
       <div className={experienceBadge}>
         <strong className="font-heading text-[40px] leading-none max-[560px]:text-[30px]">10+</strong>
         <span className="mt-2 text-[11px] leading-[1.4] tracking-[1.8px] uppercase max-[560px]:text-[8.5px]">Years of<br />Experience</span>

@@ -15,7 +15,7 @@ const drawerLink = "flex items-center justify-between gap-4 border-b border-whit
 const drawerSubLink = `min-h-[42px] border-white/8 text-[13px] text-[#e7d6c6] ${drawerLink}`;
 const drawerContactLink = "flex items-center gap-[11px] text-[12px] text-[#e7d6c6] [&_svg]:size-[17px] [&_svg]:text-[#d59a58]";
 
-// Nav items that open a dropdown: the listing page plus its details page.
+// Nav items that open a dropdown
 const dropdownMenus: Record<string, { label: string; detailPage: string; links: { href: string; page: string; label: string }[] }> = {
 };
 

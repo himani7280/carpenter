@@ -1,8 +1,5 @@
 import rawData from "./data.json";
 
-export const carpenterTemplate = rawData.Carpenter;
-export const templateComponents = rawData.Carpenter.templateComponents;
-export const sections = rawData.Carpenter.sections;
 
 export const pageNames = rawData.pageNames as unknown as readonly [
   "home",
@@ -37,7 +34,6 @@ export const servicesContent = rawData.servicesContent;
 export const galleryContent = rawData.galleryContent;
 export const blogContent = rawData.blogContent;
 export const carpenterServices = rawData.carpenterServices;
-export const serviceTypes = rawData.serviceTypes;
 export const projectGallery = rawData.projectGallery;
 export const blogPosts = rawData.blogPosts;
 export const aboutBenefits = rawData.aboutBenefits;

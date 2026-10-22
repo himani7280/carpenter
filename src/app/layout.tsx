@@ -39,7 +39,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body className="min-h-screen bg-white text-ink antialiased font-body">
         <SiteLoader />
         <SiteMotion />
-        {/* overflow-x-clip lives on this wrapper (not <body>, whose overflow is applied to the viewport) so slide-in animations can't widen the page on phones; clip keeps the sticky header working. */}
+        
         <div className="overflow-x-clip">
           <SiteHeader />
           <main>{children}</main>

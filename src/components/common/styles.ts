@@ -1,6 +1,4 @@
-// Shared Tailwind class strings for patterns reused across several components.
 
-// Standardized title sizing across all screens using Open Sans
 export const titleShared = "font-heading text-[clamp(28px,2.8vw,38px)] leading-[1.15] font-bold tracking-[-0.8px]";
 
 // Refined vertical section padding

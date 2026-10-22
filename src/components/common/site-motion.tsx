@@ -5,9 +5,7 @@ import { usePathname } from "next/navigation";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-// Starting states for data-motion-effect values; each animates to its natural position.
-// Starting states for data-motion-effect values; each animates to its natural position.
-// Slide distances are capped so tall blocks don't sweep across the content above them.
+
 const motionEffects: Record<string, (element: HTMLElement) => gsap.TweenVars> = {
   "fade-up": (element) => ({ y: -Math.min(element.offsetHeight, 140) }),
   "fade-down": (element) => ({ y: Math.min(element.offsetHeight, 140) }),
@@ -87,7 +85,7 @@ export function SiteMotion() {
             });
           };
 
-          // Phones and tablets: a soft zoom-and-rise reveal instead of the 3D flip.
+          
           if (window.matchMedia("(max-width: 800px), (hover: none)").matches) {
             gsap.fromTo(image, { scale: 1.25, y: 36, autoAlpha: 0 }, {
               scale: 1,
